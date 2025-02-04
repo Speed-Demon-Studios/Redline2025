@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public string CurrentScene;
 
+    public SteamAchievementManager SAM;
     public RedlineActivator rActivator;
     public NameRandomiser nRandomiser;
     public RaceCountdown raceCountdown;
@@ -109,6 +110,8 @@ public class GameManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(this.gameObject);
+
+        SAM = FindObjectOfType<SteamAchievementManager>();
     }
 
     private void Update()
