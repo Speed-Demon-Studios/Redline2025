@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:RedLine/Assets/Art/Environment/Materials/MAT_RadioTower.mat.meta
+guid: 90a4feb356e227a4196538d928b8b406
+========
+guid: b5c3b5787ed40b446bac950cab11341e
+>>>>>>>> origin/Daniel_NEW:RedLine/Assets/Design/Shaders/BlurPanelMat.mat.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

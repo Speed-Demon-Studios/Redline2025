@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{373b0bd4-2069-4733-9f4d-6b7ba3aabdd2}">
+		<property name="volume">
+			<value>-0.5</value>
+		</property>
+		<property name="name">
+			<value>Fulcrum</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{2b9699f7-7c84-4ba1-a75d-8f3ad7c98c38}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{496d92ef-74ec-48c3-b0bb-c2024e3e1266}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{6faccbb5-767b-4618-a6bb-ed73766c5825}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{2b9699f7-7c84-4ba1-a75d-8f3ad7c98c38}">
+		<relationship name="effects">
+			<destination>{1e4c590b-1118-4293-abe4-1f63ee126668}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{496d92ef-74ec-48c3-b0bb-c2024e3e1266}" />
+	<object class="MixerBusFader" id="{1e4c590b-1118-4293-abe4-1f63ee126668}" />
+</objects>

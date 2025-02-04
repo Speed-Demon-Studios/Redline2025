@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{013c1250-6eed-41c1-a866-23d92d8b168b}">
+		<property name="name">
+			<value>RaceMusicVolume</value>
+		</property>
+		<relationship name="folder">
+			<destination>{61e2ccca-5969-4412-9430-7fe7e0d8c325}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{b8d571e6-feb5-4d56-895f-e54644883557}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{b8d571e6-feb5-4d56-895f-e54644883557}">
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>3</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

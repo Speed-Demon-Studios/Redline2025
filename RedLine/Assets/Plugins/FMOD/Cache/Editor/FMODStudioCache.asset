@@ -1,0 +1,2535 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9190091142352742763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameplaySFX/Crash#4
+  m_EditorClassIdentifier: 
+  Path: event:/GameplaySFX/Crash#4
+  Guid:
+    Data1: 878612490
+    Data2: 1076557641
+    Data3: -977239672
+    Data4: 375054529
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 400
+--- !u!114 &-9112009252851394458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/RedlineSounds/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638736757832625559
+  FileSizes:
+  - Name: Desktop
+    Value: 8103136
+  Exists: 1
+--- !u!114 &-8982834461202225900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CutlassMainEngineCompressor/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &-8812285358551980690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic 3/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &-8424821504752720589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BoostSound#2/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &-8172285251299688337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameplaySFX/Crash#1
+  m_EditorClassIdentifier: 
+  Path: event:/GameplaySFX/Crash#1
+  Guid:
+    Data1: 1190540624
+    Data2: 1087013019
+    Data3: 1067604634
+    Data4: 1592678118
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &-7844826557698325216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/RaceStart&Menu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/RaceStart&Menu
+  Guid:
+    Data1: 641358382
+    Data2: 1176160411
+    Data3: -1257866860
+    Data4: 1282714837
+  Banks:
+  - {fileID: 7530275692248856671}
+  - {fileID: -9112009252851394458}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3488589987285954473}
+  - {fileID: 303292338104323335}
+  - {fileID: -6420340322795635402}
+  - {fileID: -6258333355356572546}
+  - {fileID: -449952463377534817}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4700
+--- !u!114 &-7647445765421691336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/PlayerJoinGame
+  m_EditorClassIdentifier: 
+  Path: event:/UI/PlayerJoinGame
+  Guid:
+    Data1: -1830663462
+    Data2: 1080759601
+    Data3: -54556793
+    Data4: -1559949472
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 288
+--- !u!114 &-7331060322225430073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameplaySFX/Crash#3
+  m_EditorClassIdentifier: 
+  Path: event:/GameplaySFX/Crash#3
+  Guid:
+    Data1: 35483242
+    Data2: 1214719427
+    Data3: -1135943039
+    Data4: -2016693459
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
+--- !u!114 &-6929421546792127114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MenuMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MenuMusic
+  Guid:
+    Data1: 860536805
+    Data2: 1165370013
+    Data3: -181128793
+    Data4: -980428075
+  Banks:
+  - {fileID: 7530275692248856671}
+  - {fileID: -9112009252851394458}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3943109590843536789}
+  - {fileID: 1515930608478761683}
+  - {fileID: 2667362214910106549}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 137142
+--- !u!114 &-6891541896187169811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/NormalizedEngineSoundVolumeUp/RaceFinished
+  m_EditorClassIdentifier: 
+  Name: RaceFinished
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2846995877
+    data2: 3428332543
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - False
+  - True
+  Exists: 1
+--- !u!114 &-6885077242360977996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/RedlineSounds/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638657269981535419
+  FileSizes:
+  - Name: 
+    Value: 846
+  Exists: 1
+--- !u!114 &-6674820574515672155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/RedlineSounds/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638657269981515256
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6483466235584394100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameplaySFX/Crash#2
+  m_EditorClassIdentifier: 
+  Path: event:/GameplaySFX/Crash#2
+  Guid:
+    Data1: 1563171784
+    Data2: 1154119180
+    Data3: -898862442
+    Data4: -956594512
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 550
+--- !u!114 &-6441154801805727506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Wind/LightWind/LightWind
+  m_EditorClassIdentifier: 
+  Path: event:/Wind/LightWind/LightWind
+  Guid:
+    Data1: 862883200
+    Data2: 1331682644
+    Data3: -1909124728
+    Data4: -1283528731
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4663712550057319346}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6500
+--- !u!114 &-6420340322795635402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceStart&Menu/RaceFinished
+  m_EditorClassIdentifier: 
+  Name: RaceFinished
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2846995877
+    data2: 3428332543
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - False
+  - True
+  Exists: 1
+--- !u!114 &-6360490703901236054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RedlineBoostChargingVER2/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &-6258333355356572546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceStart&Menu/RaceMusicLowPass
+  m_EditorClassIdentifier: 
+  Name: RaceMusicLowPass
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2408736322
+    data2: 2924274743
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-6065174765402507651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boost/BoostLevelUpVersion2
+  m_EditorClassIdentifier: 
+  Path: event:/Boost/BoostLevelUpVersion2
+  Guid:
+    Data1: 1463001767
+    Data2: 1152376217
+    Data3: 1407760309
+    Data4: 1770067162
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 850
+--- !u!114 &-5838853755903085769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CutlassEngineSound/CutlassEngineLoop1.1
+  m_EditorClassIdentifier: 
+  Path: event:/CutlassEngineSound/CutlassEngineLoop1.1
+  Guid:
+    Data1: -1143761291
+    Data2: 1162560474
+    Data3: 2065030017
+    Data4: -1246360120
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4647457445661447607}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10448
+--- !u!114 &-5755149814765961670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic 3/RaceMusicLowPass
+  m_EditorClassIdentifier: 
+  Name: RaceMusicLowPass
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2408736322
+    data2: 2924274743
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-5510069479434633736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ShipWindLoop/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &-5152718037083755294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusicVolume
+  m_EditorClassIdentifier: 
+  Name: RaceMusicVolume
+  StudioPath: parameter:/RaceMusicVolume
+  Min: 0
+  Max: 5
+  Default: 3
+  ID:
+    data1: 991830749
+    data2: 1131433585
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-5048260660568121574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Wind/WindLoop/ShipWindLoop
+  m_EditorClassIdentifier: 
+  Path: event:/Wind/WindLoop/ShipWindLoop
+  Guid:
+    Data1: -1355966209
+    Data2: 1151832379
+    Data3: -714549605
+    Data4: -610016872
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5510069479434633736}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
+--- !u!114 &-4721146399573708427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/RedlineEnergyCharger/248757-Sci-Fi_Energy_Shield_Up_14
+  m_EditorClassIdentifier: 
+  Path: event:/RedlineEnergyCharger/248757-Sci-Fi_Energy_Shield_Up_14
+  Guid:
+    Data1: -732727649
+    Data2: 1314593622
+    Data3: 208126650
+    Data4: 963345092
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5063933807366314062}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2900
+--- !u!114 &-4663712550057319346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LightWind/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &-4653537488698740039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/NormalizedEngineSoundVolumeUp/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &-4538654409565157545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic/RaceMusicLowPass
+  m_EditorClassIdentifier: 
+  Name: RaceMusicLowPass
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2408736322
+    data2: 2924274743
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-3490819110275353257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic 3/ImpactPlayed
+  m_EditorClassIdentifier: 
+  Name: ImpactPlayed
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 931734486
+    data2: 3694471394
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - False
+  - True
+  Exists: 1
+--- !u!114 &-3036983066808662327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UIDeclineVER2
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UIDeclineVER2
+  Guid:
+    Data1: -1589419248
+    Data2: 1261104520
+    Data3: -1801659260
+    Data4: -224909501
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 130
+--- !u!114 &-3024552468761438937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boost/BoostSound#2
+  m_EditorClassIdentifier: 
+  Path: event:/Boost/BoostSound#2
+  Guid:
+    Data1: 1348132724
+    Data2: 1325313014
+    Data3: 1819083443
+    Data4: 1107571111
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8424821504752720589}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1200
+--- !u!114 &-2907545706788944971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ShipEngineHum/EngineHum
+  m_EditorClassIdentifier: 
+  Path: event:/ShipEngineHum/EngineHum
+  Guid:
+    Data1: -1707219996
+    Data2: 1209115749
+    Data3: 1446559134
+    Data4: -1228485050
+  Banks:
+  - {fileID: -6674820574515672155}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4200
+--- !u!114 &-2811234961157940369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameplaySFX/RealisticCrashSoundMedium
+  m_EditorClassIdentifier: 
+  Path: event:/GameplaySFX/RealisticCrashSoundMedium
+  Guid:
+    Data1: 913625443
+    Data2: 1195469722
+    Data3: 1427991171
+    Data4: 1641758963
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 335
+--- !u!114 &-2719847745259103076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusicLowPass
+  m_EditorClassIdentifier: 
+  Name: RaceMusicLowPass
+  StudioPath: parameter:/RaceMusicLowPass
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2408736322
+    data2: 2924274743
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-2205534202152425613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NewShipEngineLoop/MainShipEngineLoopCompressor
+  m_EditorClassIdentifier: 
+  Path: event:/NewShipEngineLoop/MainShipEngineLoopCompressor
+  Guid:
+    Data1: 660891482
+    Data2: 1174222986
+    Data3: -252911741
+    Data4: -351592047
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1616329387815085236}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 53028
+--- !u!114 &-1326696079625991356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Wind/StrongWind/StrongWind
+  m_EditorClassIdentifier: 
+  Path: event:/Wind/StrongWind/StrongWind
+  Guid:
+    Data1: -934016012
+    Data2: 1099982075
+    Data3: 271125669
+    Data4: -1450442892
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2339732468064029707}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15500
+--- !u!114 &-1261628517993474334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic 2/ImpactPlayed
+  m_EditorClassIdentifier: 
+  Name: ImpactPlayed
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 931734486
+    data2: 3694471394
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - False
+  - True
+  Exists: 1
+--- !u!114 &-1202247852556063800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceFinished
+  m_EditorClassIdentifier: 
+  Name: RaceFinished
+  StudioPath: parameter:/RaceFinished
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2846995877
+    data2: 3428332543
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - False
+  - True
+  Exists: 1
+--- !u!114 &-902353640327382038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ShipEngine/NormalizedEngineSoundVolumeUp
+  m_EditorClassIdentifier: 
+  Path: event:/ShipEngine/NormalizedEngineSoundVolumeUp
+  Guid:
+    Data1: 1073155609
+    Data2: 1139023539
+    Data3: -367592814
+    Data4: -650374194
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4653537488698740039}
+  - {fileID: -6891541896187169811}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19983
+--- !u!114 &-449952463377534817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceStart&Menu/ImpactPlayed
+  m_EditorClassIdentifier: 
+  Name: ImpactPlayed
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 931734486
+    data2: 3694471394
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - False
+  - True
+  Exists: 1
+--- !u!114 &-288118361261019097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boost/BoostLevelUp
+  m_EditorClassIdentifier: 
+  Path: event:/Boost/BoostLevelUp
+  Guid:
+    Data1: 1249628521
+    Data2: 1163245878
+    Data3: -1913547864
+    Data4: 818137180
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 640
+--- !u!114 &-136301121612700923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic 3/RaceMusicVolume
+  m_EditorClassIdentifier: 
+  Name: RaceMusicVolume
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 3
+  ID:
+    data1: 991830749
+    data2: 1131433585
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 2572994617365935129}
+  - {fileID: 7530275692248856671}
+  - {fileID: 8616248824752359381}
+  - {fileID: -9112009252851394458}
+  EditorEvents:
+  - {fileID: -902353640327382038}
+  - {fileID: 6485689676080109701}
+  - {fileID: -2205534202152425613}
+  - {fileID: 4122204961937916631}
+  - {fileID: 6928355200123278492}
+  - {fileID: -4721146399573708427}
+  - {fileID: 2658546784528882239}
+  - {fileID: 2368922772598688561}
+  - {fileID: 4760523441949180700}
+  - {fileID: 258234696783266387}
+  - {fileID: -7647445765421691336}
+  - {fileID: 9140701790237856491}
+  - {fileID: -5838853755903085769}
+  - {fileID: 8380050900478668021}
+  - {fileID: -6483466235584394100}
+  - {fileID: -6441154801805727506}
+  - {fileID: -1326696079625991356}
+  - {fileID: -5048260660568121574}
+  - {fileID: -7331060322225430073}
+  - {fileID: -288118361261019097}
+  - {fileID: -3024552468761438937}
+  - {fileID: 4866731878624705197}
+  - {fileID: -2811234961157940369}
+  - {fileID: 4257434774658806998}
+  - {fileID: 7277422891857483285}
+  - {fileID: -6065174765402507651}
+  - {fileID: 6754165617068825521}
+  - {fileID: -9190091142352742763}
+  - {fileID: -7844826557698325216}
+  - {fileID: -8172285251299688337}
+  - {fileID: 3279576114353477037}
+  - {fileID: 7521592317793441367}
+  - {fileID: 1778980401390251707}
+  - {fileID: 2433845644824573182}
+  - {fileID: 946929144837594943}
+  - {fileID: 6361046141408350954}
+  - {fileID: -3036983066808662327}
+  - {fileID: 7821424255209551234}
+  - {fileID: -6929421546792127114}
+  - {fileID: 4526978833179528026}
+  - {fileID: 115436463921783294}
+  EditorParameters:
+  - {fileID: 2767285069615592140}
+  - {fileID: -2719847745259103076}
+  - {fileID: -5152718037083755294}
+  - {fileID: 2905889491567865443}
+  - {fileID: -1202247852556063800}
+  - {fileID: 7592940278961716972}
+  - {fileID: 7790400147072235552}
+  MasterBanks:
+  - {fileID: 7530275692248856671}
+  StringsBanks:
+  - {fileID: 2572994617365935129}
+  cacheTime: 638736757832625559
+  cacheVersion: 131620
+--- !u!114 &115436463921783294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/RaceMusic 3
+  m_EditorClassIdentifier: 
+  Path: event:/Music/RaceMusic 3
+  Guid:
+    Data1: 99349968
+    Data2: 1158400804
+    Data3: 628608403
+    Data4: 1661551725
+  Banks:
+  - {fileID: 7530275692248856671}
+  - {fileID: -9112009252851394458}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5755149814765961670}
+  - {fileID: -136301121612700923}
+  - {fileID: 332660626558741498}
+  - {fileID: -8812285358551980690}
+  - {fileID: -3490819110275353257}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10285
+--- !u!114 &258234696783266387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UICancel
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UICancel
+  Guid:
+    Data1: 1100750972
+    Data2: 1306875294
+    Data3: -1316814456
+    Data4: -1933908993
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 148
+--- !u!114 &303292338104323335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceStart&Menu/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &332660626558741498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic 3/AudioTriggerValue
+  m_EditorClassIdentifier: 
+  Name: AudioTriggerValue
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2676587971
+    data2: 625394163
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &946929144837594943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameplaySFX/NewShipCrash1
+  m_EditorClassIdentifier: 
+  Path: event:/GameplaySFX/NewShipCrash1
+  Guid:
+    Data1: -444044824
+    Data2: 1266024704
+    Data3: 1888007826
+    Data4: 1892158932
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 339
+--- !u!114 &1515930608478761683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MenuMusic/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &1616329387815085236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MainShipEngineLoopCompressor/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &1778980401390251707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/RaceMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/RaceMusic
+  Guid:
+    Data1: -1923113536
+    Data2: 1131511449
+    Data3: -86347899
+    Data4: -1065244347
+  Banks:
+  - {fileID: 7530275692248856671}
+  - {fileID: -9112009252851394458}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6607927915455976103}
+  - {fileID: -4538654409565157545}
+  - {fileID: 7992538246621728974}
+  - {fileID: 3752164480741205784}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 130295
+--- !u!114 &2339732468064029707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/StrongWind/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &2368922772598688561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SplitwingEngineLoop/SplitwingEngineLoop1.2
+  m_EditorClassIdentifier: 
+  Path: event:/SplitwingEngineLoop/SplitwingEngineLoop1.2
+  Guid:
+    Data1: 425919509
+    Data2: 1254462782
+    Data3: -622912602
+    Data4: -1670916056
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3225214814476204604}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11512
+--- !u!114 &2433845644824573182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameplaySFX/NewShipCrash2
+  m_EditorClassIdentifier: 
+  Path: event:/GameplaySFX/NewShipCrash2
+  Guid:
+    Data1: 2032582850
+    Data2: 1297002823
+    Data3: -365161292
+    Data4: -997374352
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 550
+--- !u!114 &2572994617365935129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/RedlineSounds/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638736757832072776
+  FileSizes:
+  - Name: Desktop
+    Value: 3946
+  Exists: 1
+--- !u!114 &2658546784528882239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CutlassEngineSound/CutlassMainEngineCompressor
+  m_EditorClassIdentifier: 
+  Path: event:/CutlassEngineSound/CutlassMainEngineCompressor
+  Guid:
+    Data1: 1911799846
+    Data2: 1197969837
+    Data3: 381080228
+    Data4: -676002068
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8982834461202225900}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 37485
+--- !u!114 &2667362214910106549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MenuMusic/MasterVolume
+  m_EditorClassIdentifier: 
+  Name: MasterVolume
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 1
+  ID:
+    data1: 2843130939
+    data2: 2973284729
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2767285069615592140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/AudioTriggerValue
+  m_EditorClassIdentifier: 
+  Name: AudioTriggerValue
+  StudioPath: parameter:/AudioTriggerValue
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2676587971
+    data2: 625394163
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2905889491567865443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: parameter:/SetStereoOrMono
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &3225214814476204604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SplitwingEngineLoop1.2/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &3279576114353477037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameplaySFX/NewElectricShipCrashShort
+  m_EditorClassIdentifier: 
+  Path: event:/GameplaySFX/NewElectricShipCrashShort
+  Guid:
+    Data1: -1775115383
+    Data2: 1219390432
+    Data3: -503234135
+    Data4: 993662267
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 444
+--- !u!114 &3488589987285954473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceStart&Menu/AudioTriggerValue
+  m_EditorClassIdentifier: 
+  Name: AudioTriggerValue
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2676587971
+    data2: 625394163
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3752164480741205784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &3943109590843536789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MenuMusic/AudioTriggerValue
+  m_EditorClassIdentifier: 
+  Name: AudioTriggerValue
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2676587971
+    data2: 625394163
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &4122204961937916631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ShipEngineHumBACKING/ShipEngineHumAUX
+  m_EditorClassIdentifier: 
+  Path: event:/ShipEngineHumBACKING/ShipEngineHumAUX
+  Guid:
+    Data1: 1137344070
+    Data2: 1096902449
+    Data3: 149315970
+    Data4: 2060307264
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5407499377012553169}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10221
+--- !u!114 &4257434774658806998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameplaySFX/RealisticCrashSoundLarge
+  m_EditorClassIdentifier: 
+  Path: event:/GameplaySFX/RealisticCrashSoundLarge
+  Guid:
+    Data1: 1026925213
+    Data2: 1219440930
+    Data3: 723192499
+    Data4: -809761278
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 361
+--- !u!114 &4526978833179528026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/RaceMusic 2
+  m_EditorClassIdentifier: 
+  Path: event:/Music/RaceMusic 2
+  Guid:
+    Data1: 333615201
+    Data2: 1282084996
+    Data3: -194980976
+    Data4: 171796911
+  Banks:
+  - {fileID: 7530275692248856671}
+  - {fileID: -9112009252851394458}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8058896536668101397}
+  - {fileID: 6469501260797415340}
+  - {fileID: 5183794869007074142}
+  - {fileID: 6820761817353361190}
+  - {fileID: -1261628517993474334}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 76285
+--- !u!114 &4647457445661447607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CutlassEngineLoop1.1/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &4760523441949180700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/GamePaused
+  m_EditorClassIdentifier: 
+  Path: event:/UI/GamePaused
+  Guid:
+    Data1: -1693224700
+    Data2: 1208141708
+    Data3: 1990534328
+    Data4: 906663105
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 255
+--- !u!114 &4866731878624705197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boost/BoostSound#1
+  m_EditorClassIdentifier: 
+  Path: event:/Boost/BoostSound#1
+  Guid:
+    Data1: 1058456205
+    Data2: 1186251929
+    Data3: -907354722
+    Data4: -2102314217
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5399521369605515249}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 908
+--- !u!114 &5063933807366314062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/248757-Sci-Fi_Energy_Shield_Up_14/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &5183794869007074142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic 2/RaceMusicLowPass
+  m_EditorClassIdentifier: 
+  Name: RaceMusicLowPass
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2408736322
+    data2: 2924274743
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &5399521369605515249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BoostSound#1/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &5407499377012553169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ShipEngineHumAUX/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &5637463809876672210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ShipEngine/NormalizedEngineSoundVolumeUp
+  m_EditorClassIdentifier: 
+  Path: event:/ShipEngine/NormalizedEngineSoundVolumeUp
+  Guid:
+    Data1: 1073155609
+    Data2: 1139023539
+    Data3: -367592814
+    Data4: -650374194
+  Banks:
+  - {fileID: -6674820574515672155}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19983
+--- !u!114 &5908220509679843718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/EngineHum/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &6361046141408350954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UIFlickVER2
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UIFlickVER2
+  Guid:
+    Data1: -463837427
+    Data2: 1288613995
+    Data3: 2136896134
+    Data4: 2102355825
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 177
+--- !u!114 &6469501260797415340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic 2/RaceMusicVolume
+  m_EditorClassIdentifier: 
+  Name: RaceMusicVolume
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 3
+  ID:
+    data1: 991830749
+    data2: 1131433585
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &6485689676080109701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ShipEngineHum/EngineHum
+  m_EditorClassIdentifier: 
+  Path: event:/ShipEngineHum/EngineHum
+  Guid:
+    Data1: -1707219996
+    Data2: 1209115749
+    Data3: 1446559134
+    Data4: -1228485050
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5908220509679843718}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4200
+--- !u!114 &6607927915455976103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic/AudioTriggerValue
+  m_EditorClassIdentifier: 
+  Name: AudioTriggerValue
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2676587971
+    data2: 625394163
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &6754165617068825521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boost/RedlineBoostChargingVER2
+  m_EditorClassIdentifier: 
+  Path: event:/Boost/RedlineBoostChargingVER2
+  Guid:
+    Data1: -957722253
+    Data2: 1112487255
+    Data3: 533376155
+    Data4: -393363119
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6360490703901236054}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &6820761817353361190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic 2/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &6928355200123278492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/EnginePulse/MainEnginePulseLoop
+  m_EditorClassIdentifier: 
+  Path: event:/EnginePulse/MainEnginePulseLoop
+  Guid:
+    Data1: -1537893168
+    Data2: 1260994752
+    Data3: 1997540799
+    Data4: 2070873256
+  Banks:
+  - {fileID: 8616248824752359381}
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8029527376150401962}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6687
+--- !u!114 &7277422891857483285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UIPlayerJoinedGameVER2
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UIPlayerJoinedGameVER2
+  Guid:
+    Data1: -1687994639
+    Data2: 1184200353
+    Data3: -1859903852
+    Data4: -1645290867
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
+--- !u!114 &7521592317793441367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/New Snapshot
+  m_EditorClassIdentifier: 
+  Path: snapshot:/New Snapshot
+  Guid:
+    Data1: -1201001588
+    Data2: 1146903903
+    Data3: 532713861
+    Data4: -310760009
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7530275692248856671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/RedlineSounds/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638736757832042858
+  FileSizes:
+  - Name: Desktop
+    Value: 17370144
+  Exists: 1
+--- !u!114 &7592940278961716972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ImpactPlayed
+  m_EditorClassIdentifier: 
+  Name: ImpactPlayed
+  StudioPath: parameter:/ImpactPlayed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 931734486
+    data2: 3694471394
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - False
+  - True
+  Exists: 1
+--- !u!114 &7790400147072235552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MasterVolume
+  m_EditorClassIdentifier: 
+  Name: MasterVolume
+  StudioPath: parameter:/MasterVolume
+  Min: 0
+  Max: 2
+  Default: 1
+  ID:
+    data1: 2843130939
+    data2: 2973284729
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &7821424255209551234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UIConfirmVER2
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UIConfirmVER2
+  Guid:
+    Data1: -1957949709
+    Data2: 1105626873
+    Data3: 1853341337
+    Data4: 198423917
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 54
+--- !u!114 &7992538246621728974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic/RaceMusicVolume
+  m_EditorClassIdentifier: 
+  Name: RaceMusicVolume
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 3
+  ID:
+    data1: 991830749
+    data2: 1131433585
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8029527376150401962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MainEnginePulseLoop/SetStereoOrMono
+  m_EditorClassIdentifier: 
+  Name: SetStereoOrMono
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3287983
+    data2: 3444888738
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Mono
+  - Stereo
+  Exists: 1
+--- !u!114 &8058896536668101397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RaceMusic 2/AudioTriggerValue
+  m_EditorClassIdentifier: 
+  Name: AudioTriggerValue
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2676587971
+    data2: 625394163
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8380050900478668021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FulcrumEngineLoop/FulcrumEngineLoop
+  m_EditorClassIdentifier: 
+  Path: event:/FulcrumEngineLoop/FulcrumEngineLoop
+  Guid:
+    Data1: 1587684716
+    Data2: 1094702351
+    Data3: -100940142
+    Data4: 332200547
+  Banks:
+  - {fileID: 8616248824752359381}
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42000
+--- !u!114 &8616248824752359381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/FulcrumEngine.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/RedlineSounds/Build/Desktop/FulcrumEngine.bank
+  Name: FulcrumEngine
+  StudioPath: bank:/FulcrumEngine
+  lastModified: 638736745493193704
+  FileSizes:
+  - Name: Desktop
+    Value: 1538976
+  Exists: 1
+--- !u!114 &9140701790237856491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UIConfirm
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UIConfirm
+  Guid:
+    Data1: 181863396
+    Data2: 1258173719
+    Data3: -47274580
+    Data4: 2104675208
+  Banks:
+  - {fileID: 7530275692248856671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 230
