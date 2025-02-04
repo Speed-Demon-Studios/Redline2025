@@ -1,0 +1,636 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6226422194959070780
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdece6f28a96aec1a9d3e9cd3a3ed6e, type: 3}
+  m_Name: MotionBlurVolumeComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  <displayName>k__BackingField: 
+  quality:
+    m_OverrideState: 1
+    m_Value: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1
+  threshold:
+    m_OverrideState: 0
+    m_Value: 0.01
+  preventBleeding:
+    m_OverrideState: 0
+    m_Value: 0
+  accumulateVelocity:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &-5612541092784365381
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc9babe7be7db34daa7a9f17798ad18, type: 3}
+  m_Name: vMotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  <displayName>k__BackingField: 
+  enabled:
+    m_OverrideState: 1
+    m_Value: 1
+  samples:
+    m_OverrideState: 1
+    m_Value: 8
+  noiseMode:
+    m_OverrideState: 1
+    m_Value: 1
+  motionTextureQuality:
+    m_OverrideState: 1
+    m_Value: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.5
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.04
+  blendMotion:
+    m_OverrideState: 1
+    m_Value: 1
+  viewInEditor:
+    m_OverrideState: 1
+    m_Value: 0
+  includeTransparentObjects:
+    m_OverrideState: 1
+    m_Value: 0
+  debugMode:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &-3705181283709448180
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07f865d897fe2684b920f9f52b751551, type: 3}
+  m_Name: TinyMotion
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    m_OverrideState: 1
+    m_Value: 1
+  samples:
+    m_OverrideState: 1
+    m_Value: 6
+  motionTextureQuality:
+    m_OverrideState: 1
+    m_Value: 1
+  downsample:
+    m_OverrideState: 1
+    m_Value: 1
+  noiseMode:
+    m_OverrideState: 1
+    m_Value: 1
+  animateNoise:
+    m_OverrideState: 1
+    m_Value: 1
+  skipSecondPass:
+    m_OverrideState: 1
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.243
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.02
+  clampVelocity:
+    m_OverrideState: 1
+    m_Value: 1
+  blendMotion:
+    m_OverrideState: 1
+    m_Value: 0
+  viewInEditor:
+    m_OverrideState: 0
+    m_Value: 0
+  includeTransparentObjects:
+    m_OverrideState: 1
+    m_Value: 0
+  debugMode:
+    m_OverrideState: 0
+    m_Value: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: TinyMotion_DemoSceneVolumeProfile
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 941954149927239746}
+  - {fileID: 3977574033388325717}
+--- !u!114 &941954149927239746
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf9669dd43d41362b826cb959e024e98, type: 3}
+  m_Name: TinyMotionComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  blurMode:
+    m_OverrideState: 1
+    m_Value: 1
+  sampleCountMode:
+    m_OverrideState: 1
+    m_Value: 1
+  samples:
+    m_OverrideState: 1
+    m_Value: 12
+  minSampleCount:
+    m_OverrideState: 1
+    m_Value: 0
+  maxSampleCount:
+    m_OverrideState: 1
+    m_Value: 6
+  motionTextureQuality:
+    m_OverrideState: 1
+    m_Value: 1
+  downsample:
+    m_OverrideState: 1
+    m_Value: 1
+  noiseMode:
+    m_OverrideState: 1
+    m_Value: 0
+  animateNoise:
+    m_OverrideState: 1
+    m_Value: 0
+  skipSecondPass:
+    m_OverrideState: 0
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1
+  intensityCamera:
+    m_OverrideState: 1
+    m_Value: 0.5
+  shutterSpeed:
+    m_OverrideState: 1
+    m_Value: 250
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.01
+  depthSeparationTreshold:
+    m_OverrideState: 1
+    m_Value: 0.25
+  depthSeparationBothWays:
+    m_OverrideState: 1
+    m_Value: 0
+  depthSeparationVelocity:
+    m_OverrideState: 1
+    m_Value: 1
+  depthSeparationVelocityTreshold:
+    m_OverrideState: 1
+    m_Value: 0.25
+  clampVelocity:
+    m_OverrideState: 0
+    m_Value: 1
+  viewInEditor:
+    m_OverrideState: 0
+    m_Value: 0
+  includeTransparentObjects:
+    m_OverrideState: 1
+    m_Value: 0
+  debugMode:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &2368108816047649548
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TinyMotionBlur
+  m_EditorClassIdentifier: TinyMotion:TinyMotion:TinyMotionBlur
+  active: 1
+  enabled:
+    m_OverrideState: 1
+    m_Value: 1
+  samples:
+    m_OverrideState: 0
+    m_Value: 2
+  noiseMode:
+    m_OverrideState: 0
+    m_Value: 0
+  motionTextureQuality:
+    m_OverrideState: 0
+    m_Value: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.358
+  threshold:
+    m_OverrideState: 0
+    m_Value: 0.01
+  blendMotion:
+    m_OverrideState: 0
+    m_Value: 0
+  viewInEditor:
+    m_OverrideState: 0
+    m_Value: 0
+  includeTransparentObjects:
+    m_OverrideState: 0
+    m_Value: 0
+  debugMode:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &2453194512509993510
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe04c479f0ed86eb6af918423878bf43, type: 3}
+  m_Name: VertexMotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  quality:
+    m_OverrideState: 1
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.5
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.01
+  preventBleeding:
+    m_OverrideState: 0
+    m_Value: 0
+  accumulateVelocity:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &2577705669787074999
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f9880c190034a798f0bdcd99c27934, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  <displayName>k__BackingField: 
+  quality:
+    m_OverrideState: 1
+    m_Value: 2
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.5
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.0125
+  accumulateVelocity:
+    m_OverrideState: 1
+    m_Value: 1
+  preventBleeding:
+    m_OverrideState: 0
+    m_Value: 0
+  viewInEditor:
+    m_OverrideState: 1
+    m_Value: 1
+  debugVectors:
+    m_OverrideState: 0
+    m_Value: 0
+  debugNoise:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &3977574033388325717
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+  m_Name: Tonemapping
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 1
+  neutralHDRRangeReductionMode:
+    m_OverrideState: 0
+    m_Value: 2
+  acesPreset:
+    m_OverrideState: 0
+    m_Value: 3
+  hueShiftAmount:
+    m_OverrideState: 0
+    m_Value: 0
+  detectPaperWhite:
+    m_OverrideState: 0
+    m_Value: 0
+  paperWhite:
+    m_OverrideState: 0
+    m_Value: 300
+  detectBrightnessLimits:
+    m_OverrideState: 0
+    m_Value: 1
+  minNits:
+    m_OverrideState: 0
+    m_Value: 0.005
+  maxNits:
+    m_OverrideState: 0
+    m_Value: 1000
+--- !u!114 &4481631149386123659
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caaa730dcae5d07b18fb856869a2c5dd, type: 3}
+  m_Name: VectorMotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  <displayName>k__BackingField: 
+  enabled:
+    m_OverrideState: 1
+    m_Value: 1
+  noiseMode:
+    m_OverrideState: 0
+    m_Value: 1
+  motionTextureQuality:
+    m_OverrideState: 1
+    m_Value: 1
+  quality:
+    m_OverrideState: 1
+    m_Value: 2
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.5
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.001
+  blendMotion:
+    m_OverrideState: 1
+    m_Value: 1
+  preventBleeding:
+    m_OverrideState: 0
+    m_Value: 0
+  viewInEditor:
+    m_OverrideState: 0
+    m_Value: 0
+  debugVelocity:
+    m_OverrideState: 0
+    m_Value: 0
+  debugVectors:
+    m_OverrideState: 0
+    m_Value: 0
+  debugNoise:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &4767417480813331538
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf9669dd43d41362b826cb959e024e98, type: 3}
+  m_Name: TinyMotionComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  blurMode:
+    m_OverrideState: 1
+    m_Value: 1
+  sampleCountMode:
+    m_OverrideState: 0
+    m_Value: 1
+  samples:
+    m_OverrideState: 1
+    m_Value: 6
+  minSampleCount:
+    m_OverrideState: 0
+    m_Value: 2
+  maxSampleCount:
+    m_OverrideState: 0
+    m_Value: 6
+  motionTextureQuality:
+    m_OverrideState: 1
+    m_Value: 1
+  downsample:
+    m_OverrideState: 1
+    m_Value: 1
+  noiseMode:
+    m_OverrideState: 1
+    m_Value: 0
+  animateNoise:
+    m_OverrideState: 1
+    m_Value: 0
+  skipSecondPass:
+    m_OverrideState: 1
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1.8
+  intensityCamera:
+    m_OverrideState: 0
+    m_Value: 0
+  shutterSpeed:
+    m_OverrideState: 1
+    m_Value: 0
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.02
+  depthSeparationTreshold:
+    m_OverrideState: 1
+    m_Value: 0.065
+  depthSeparationBothWays:
+    m_OverrideState: 1
+    m_Value: 0
+  depthSeparationVelocity:
+    m_OverrideState: 0
+    m_Value: 0
+  depthSeparationVelocityTreshold:
+    m_OverrideState: 0
+    m_Value: 0.25
+  clampVelocity:
+    m_OverrideState: 0
+    m_Value: 1
+  viewInEditor:
+    m_OverrideState: 1
+    m_Value: 1
+  includeTransparentObjects:
+    m_OverrideState: 0
+    m_Value: 0
+  debugMode:
+    m_OverrideState: 1
+    m_Value: 4
+--- !u!114 &7249688362472837781
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf9669dd43d41362b826cb959e024e98, type: 3}
+  m_Name: TinyMotionComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  blurMode:
+    m_OverrideState: 1
+    m_Value: 0
+  sampleCountMode:
+    m_OverrideState: 0
+    m_Value: 1
+  samples:
+    m_OverrideState: 1
+    m_Value: 6
+  minSampleCount:
+    m_OverrideState: 0
+    m_Value: 2
+  maxSampleCount:
+    m_OverrideState: 0
+    m_Value: 6
+  motionTextureQuality:
+    m_OverrideState: 1
+    m_Value: 1
+  downsample:
+    m_OverrideState: 1
+    m_Value: 1
+  noiseMode:
+    m_OverrideState: 1
+    m_Value: 1
+  animateNoise:
+    m_OverrideState: 1
+    m_Value: 1
+  skipSecondPass:
+    m_OverrideState: 1
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.25
+  intensityCamera:
+    m_OverrideState: 0
+    m_Value: 0
+  shutterSpeed:
+    m_OverrideState: 0
+    m_Value: 0
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.02
+  depthSeparationTreshold:
+    m_OverrideState: 1
+    m_Value: 0.05
+  depthSeparationBothWays:
+    m_OverrideState: 1
+    m_Value: 0
+  depthSeparationVelocity:
+    m_OverrideState: 0
+    m_Value: 0
+  depthSeparationVelocityTreshold:
+    m_OverrideState: 0
+    m_Value: 0.25
+  clampVelocity:
+    m_OverrideState: 1
+    m_Value: 1
+  viewInEditor:
+    m_OverrideState: 0
+    m_Value: 1
+  includeTransparentObjects:
+    m_OverrideState: 1
+    m_Value: 0
+  debugMode:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &8877858202563298980
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07f865d897fe2684b920f9f52b751551, type: 3}
+  m_Name: TinyMotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    m_OverrideState: 1
+    m_Value: 1
+  samples:
+    m_OverrideState: 1
+    m_Value: 4
+  motionTextureQuality:
+    m_OverrideState: 1
+    m_Value: 1
+  downsample:
+    m_OverrideState: 0
+    m_Value: 1
+  noiseMode:
+    m_OverrideState: 1
+    m_Value: 1
+  animateNoise:
+    m_OverrideState: 0
+    m_Value: 0
+  skipSecondPass:
+    m_OverrideState: 0
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.01
+  clampVelocity:
+    m_OverrideState: 0
+    m_Value: 0.01
+  blendMotion:
+    m_OverrideState: 0
+    m_Value: 0
+  viewInEditor:
+    m_OverrideState: 0
+    m_Value: 0
+  includeTransparentObjects:
+    m_OverrideState: 0
+    m_Value: 0
+  debugMode:
+    m_OverrideState: 0
+    m_Value: 0

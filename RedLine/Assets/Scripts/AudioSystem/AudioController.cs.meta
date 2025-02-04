@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 94ab16fbaf4259244ae0a48564bb7dc1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - redlineMixer: {fileID: 24100000, guid: 26b2806f9b2328a48be5ee7cd0d54410, type: 2}
+  - SFXGROUP: {instanceID: 0}
+  - BGMGROUP: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

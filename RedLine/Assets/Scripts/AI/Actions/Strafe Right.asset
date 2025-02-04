@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c08bfc797318fe4c867a3018905798e, type: 3}
+  m_Name: Strafe Right
+  m_EditorClassIdentifier: 
+  Name: 
+  score: 0
+  isFinished: 1
+  considerations:
+  - {fileID: 11400000, guid: 07b89100d78ea6d42aae6d0df7978a9d, type: 2}
+  - {fileID: 11400000, guid: 8d7d5a93908c79648a5c5dde1433c764, type: 2}
