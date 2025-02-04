@@ -59,6 +59,11 @@ public class ManageSceneLoading : MonoBehaviour
         GameObject shipModelObject = controls.shipModel.transform.GetChild(0).gameObject;
         DestroyImmediate(playerOBJ.GetComponent<AIMoveInputs>());
 
+        if (GameManager.gManager.SAM != null)
+        {
+            GameManager.gManager.SAM.CheckAllAchievementProgress(GameManager.gManager.players[0].GetComponent<RacerDetails>().placement);
+        }
+
         playerInputScript.GetComponent<ShipToWallCollision>().ResetDetails();
 
         controls.FireList.Clear();
@@ -154,6 +159,7 @@ public class ManageSceneLoading : MonoBehaviour
         {
             DestroyImmediate(collider.gameObject);
         }
+
 
         PlayerPrefs.SetInt("SceneID", 1);
         SceneManager.LoadSceneAsync(3);
