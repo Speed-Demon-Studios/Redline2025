@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{e1af8b5c-f396-4690-bf80-caa9de665406}">
+		<property name="name">
+			<value>FulcrumEngine</value>
+		</property>
+		<relationship name="folder">
+			<destination>{cda17b21-ba96-4a29-8c26-801dd72298e8}</destination>
+		</relationship>
+	</object>
+</objects>

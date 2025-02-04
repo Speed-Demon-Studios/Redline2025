@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6a6e494a-cc02-42d8-8f3d-9107ee848413}">
+		<property name="assetPath">
+			<value>NewElectricShipCrashShort.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.44408163265306122</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b3cd06a2-59cd-4311-9765-4069007cb72d}</destination>
+		</relationship>
+	</object>
+</objects>

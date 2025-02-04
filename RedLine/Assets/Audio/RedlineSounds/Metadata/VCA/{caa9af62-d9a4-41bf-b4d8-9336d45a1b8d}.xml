@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerVCA" id="{caa9af62-d9a4-41bf-b4d8-9336d45a1b8d}">
+		<property name="volume">
+			<value>-4</value>
+		</property>
+		<property name="name">
+			<value>Boost</value>
+		</property>
+		<relationship name="automators">
+			<destination>{aaff8b4b-f181-4ecf-a181-ad9670b16a3f}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{75b0d06c-f70b-4c8b-814a-23c6214316c9}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{aaff8b4b-f181-4ecf-a181-ad9670b16a3f}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+	</object>
+</objects>

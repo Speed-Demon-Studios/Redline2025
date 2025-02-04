@@ -1,0 +1,335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SplitWingLittleWings
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Control
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl/EngineBack_Ctrl
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl/EngineFront_Ctrl
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl/Wing_Ctrl_L
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl/Wing_Ctrl_L/LittleWingConnection_Ctrl_L
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl/Wing_Ctrl_L/LittleWingConnection_Ctrl_L/LittleWing_Ctrl_L
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl/Wing_Ctrl_L/Rudder_Ctrl_L
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl/Wing_Ctrl_R
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl/Wing_Ctrl_R/LittleWingConnection_Ctrl_R
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl/Wing_Ctrl_R/LittleWingConnection_Ctrl_R/LittleWing_Ctrl_R
+    m_Weight: 0
+  - m_Path: Control/Root_Ctrl/Wing_Ctrl_R/Rudder_Ctrl_R
+    m_Weight: 0
+  - m_Path: Geometry
+    m_Weight: 0
+  - m_Path: Geometry/Cockpit
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_01
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_02
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_03
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_04
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_05
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_06
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_07
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_08
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_09
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_10
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_11
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_12
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_13
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_14
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_15
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_16
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_17
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_18
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_19
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_20
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_21
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_22
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_23
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_24
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_25
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_26
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_27
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_28
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_29
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_30
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_31
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_32
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_33
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_34
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_35
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_36
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_37
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_38
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_39
+    m_Weight: 0
+  - m_Path: Geometry/EngineBlade_GRP/GEO_EngineBlade_40
+    m_Weight: 0
+  - m_Path: Geometry/Rudder_GRP
+    m_Weight: 0
+  - m_Path: Geometry/Rudder_GRP/Rudder_L
+    m_Weight: 0
+  - m_Path: Geometry/Rudder_GRP/Rudder_R
+    m_Weight: 0
+  - m_Path: Geometry/Wing_GRP
+    m_Weight: 0
+  - m_Path: Geometry/Wing_GRP/Wing_L
+    m_Weight: 0
+  - m_Path: Geometry/Wing_GRP/Wing_L/LittleWing_L
+    m_Weight: 0
+  - m_Path: Geometry/Wing_GRP/Wing_L/LittleWingConnection_L
+    m_Weight: 0
+  - m_Path: Geometry/Wing_GRP/Wing_R
+    m_Weight: 0
+  - m_Path: Geometry/Wing_GRP/Wing_R/LittleWing_R
+    m_Weight: 0
+  - m_Path: Geometry/Wing_GRP/Wing_R/LitttleWingConnection_R
+    m_Weight: 0
+  - m_Path: Geometry/Wing_L
+    m_Weight: 0
+  - m_Path: Geometry/Wing_R
+    m_Weight: 0
+  - m_Path: Rig
+    m_Weight: 0
+  - m_Path: Rig/root_it
+    m_Weight: 0
+  - m_Path: Rig/root_it/Cockpit_it
+    m_Weight: 0
+  - m_Path: Rig/root_it/Cockpit_it/LittleWingConnection_L
+    m_Weight: 1
+  - m_Path: Rig/root_it/Cockpit_it/LittleWingConnection_L/LittleWing_L
+    m_Weight: 1
+  - m_Path: Rig/root_it/Cockpit_it/LittleWingConnection_R
+    m_Weight: 1
+  - m_Path: Rig/root_it/Cockpit_it/LittleWingConnection_R/LittleWing_R
+    m_Weight: 1
+  - m_Path: Rig/root_it/Cockpit_it/Wing_L
+    m_Weight: 1
+  - m_Path: Rig/root_it/Cockpit_it/Wing_L/Rudder_L
+    m_Weight: 0
+  - m_Path: Rig/root_it/Cockpit_it/Wing_R
+    m_Weight: 1
+  - m_Path: Rig/root_it/Cockpit_it/Wing_R/Rudder_R
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_01
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_02
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_03
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_04
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_05
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_06
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_07
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_08
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_09
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_10
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_11
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_12
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_13
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_14
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_15
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_16
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_17
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_18
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_19
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_20
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_21
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_22
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_23
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_24
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_25
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_26
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_27
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_28
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_29
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_30
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_31
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_32
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_33
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_34
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_35
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_36
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_37
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_38
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_39
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineBack_it/BladeBack_40
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_01
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_02
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_03
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_04
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_05
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_06
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_07
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_08
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_09
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_10
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_11
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_12
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_13
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_14
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_15
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_16
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_17
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_18
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_19
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_20
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_21
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_22
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_23
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_24
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_25
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_26
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_27
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_28
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_29
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_30
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_31
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_32
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_33
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_34
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_35
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_36
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_37
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_38
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_39
+    m_Weight: 0
+  - m_Path: Rig/root_it/Engine_it/EngineFront_it/BladeFront_40
+    m_Weight: 0

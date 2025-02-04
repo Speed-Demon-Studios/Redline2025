@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{dbd45228-4e65-496f-8424-d1f4753735df}">
+		<property name="assetPath">
+			<value>NormalizedEngineSoundVolumeUp.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>19.983673469387757</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b3cd06a2-59cd-4311-9765-4069007cb72d}</destination>
+		</relationship>
+	</object>
+</objects>

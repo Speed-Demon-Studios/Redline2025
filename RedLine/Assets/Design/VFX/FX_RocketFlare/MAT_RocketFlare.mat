@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7066538963859965437
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!114 &-3934219051385592632
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MAT_RocketFlare
+  m_Shader: {fileID: -6465566751694194690, guid: f0ab26155c930354f8e91de066104ae5,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9bc1623532fc9734d9bf7b0550315855, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_26657593b52c4d22bcb875f48279f0ed_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 2ac7fda491bbe2f4383373b7d5b3554f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_647ab9280d894f1cad1dc10f304cbb36_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 9bc1623532fc9734d9bf7b0550315855, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_ec5a6183b0ea43798388c06b229c2564_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 9bc1623532fc9734d9bf7b0550315855, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha_strength: 1
+    - _BUILTIN_QueueControl: 0
+    - _BUILTIN_QueueOffset: 0
+    - _DissolveScale: 35
+    - _DissolveSpeed: 1
+    - _Emissive_Strength: 6
+    - _Float: 3
+    - _QueueControl: 0
+    - _QueueOffset: 1
+    - _TO_Speed_C: 3
+    m_Colors:
+    - _Color1: {r: 7.9066987, g: 0, b: 0.2897743, a: 1}
+    - _Color2: {r: 38.937145, g: 0, b: 0, a: 1}
+    - _Emissive: {r: 1, g: 0.4609508, b: 0.1462264, a: 1}
+    - _Flare_Colour: {r: 1, g: 0, b: 0, a: 0}
+    - _MainTexSpeed: {r: -0.5, g: 0, b: 0, a: 0}
+    - _TO_Speed: {r: 3, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

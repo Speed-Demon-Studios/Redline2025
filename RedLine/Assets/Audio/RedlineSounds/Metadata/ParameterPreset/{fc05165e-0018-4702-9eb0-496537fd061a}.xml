@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{fc05165e-0018-4702-9eb0-496537fd061a}">
+		<property name="name">
+			<value>RaceMusicLowPass</value>
+		</property>
+		<relationship name="folder">
+			<destination>{61e2ccca-5969-4412-9430-7fe7e0d8c325}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c1766bd1-725e-42f9-8c73-66ea5eb74137}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c1766bd1-725e-42f9-8c73-66ea5eb74137}">
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
