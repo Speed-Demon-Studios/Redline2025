@@ -163,7 +163,7 @@ namespace EAudioSystem
             for (int i = 0; i < fmodEmitters.Count(); i++)
             {
                 //fmodEmitters[0].EventInstance.setVolume(0.15f);
-                fmodEmitters[i].EventInstance.setVolume(soundVolumes[i]);
+                //fmodEmitters[i].EventInstance.setVolume(soundVolumes[i]);
             }
 
         }

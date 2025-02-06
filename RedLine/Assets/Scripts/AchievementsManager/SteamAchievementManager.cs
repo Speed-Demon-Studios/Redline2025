@@ -59,7 +59,7 @@ public class SteamAchievementManager : MonoBehaviour
 
     public void CheckAllAchievementProgress(int p1Placement)
     {
-        RacerDetails rDeets = GameManager.gManager.players[0].GetComponent<RacerDetails>();
+        RacerDetails rDeets = GameManager.gManager.playerShips[0].GetComponent<RacerDetails>();
         bool gotAchievement;
 
         if (p1Placement >= 0)

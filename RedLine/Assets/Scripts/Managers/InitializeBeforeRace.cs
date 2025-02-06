@@ -21,22 +21,6 @@ public class InitializeBeforeRace : MonoBehaviour
     {
         if (!GetComponent<ShipsControls>().isTestShip)
         {
-            foreach (GameObject playerOBJ in GameManager.gManager.players)
-            {
-                if (this.gameObject == playerOBJ)
-                {
-                    DontDestroy ddol;
-
-                    this.gameObject.TryGetComponent<DontDestroy>(out ddol);
-
-                    if (ddol == null)
-                    {
-                        this.gameObject.AddComponent<DontDestroy>();
-                    }
-                    break;
-                }
-            }
-
             sControls = this.GetComponent<ShipsControls>();
 
             if(!GameManager.gManager.allRacers.Contains(this.gameObject))

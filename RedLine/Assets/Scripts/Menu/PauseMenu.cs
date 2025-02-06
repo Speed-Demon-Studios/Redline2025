@@ -15,7 +15,7 @@ public class PauseMenu : MonoBehaviour
 
     public void SwitchPlayerOneButton(int playerNumber)
     {
-        GameManager.gManager.players[playerNumber].GetComponent<ActionMappingControl>().mES.SetSelectedGameObject(pauseButtonFirst);
+        GameManager.gManager.players[playerNumber].GetComponent<ActionMappingControl>().GetmES().SetSelectedGameObject(pauseButtonFirst);
     }
 
     public void StartTimeAgain(bool switchs)
@@ -27,8 +27,8 @@ public class PauseMenu : MonoBehaviour
     {
         foreach(GameObject playerobj in GameManager.gManager.players)
         {
-            playerobj.GetComponent<RacerDetails>().crossedFinishLine = true;
-            playerobj.GetComponent<RacerDetails>().finishedRacing = true;
+            playerobj.GetComponent<PlayerInputScript>().GetShipControls().gameObject.GetComponent<RacerDetails>().crossedFinishLine = true;
+            playerobj.GetComponent<PlayerInputScript>().GetShipControls().gameObject.GetComponent<RacerDetails>().finishedRacing = true;
             playerobj.GetComponent<PlayerInputScript>().uiController.FinishPopUp();
         }
         if (GameManager.gManager.raceFinisher.AllRacersFinishedCheck())

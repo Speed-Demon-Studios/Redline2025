@@ -21,7 +21,7 @@ public class NameRandomiser : MonoBehaviour
         assigningNames = true;
         usedNames = new List<string>();
         bool isPlayer = false;
-        foreach (GameObject racerOBJ in GameManager.gManager.racerObjects)
+        foreach (GameObject racerOBJ in GameManager.gManager.aiRacerObjects)
         {
             isPlayer = false;
 

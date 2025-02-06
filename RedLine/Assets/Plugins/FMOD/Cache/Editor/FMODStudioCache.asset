@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/Audio/RedlineSounds/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638742640487671338
+  lastModified: 638743270050909705
   FileSizes:
   - Name: Desktop
     Value: 8103136
@@ -1170,7 +1170,7 @@ MonoBehaviour:
   - {fileID: 7530275692248856671}
   StringsBanks:
   - {fileID: 2572994617365935129}
-  cacheTime: 638742640487671338
+  cacheTime: 638743270050909705
   cacheVersion: 131620
 --- !u!114 &115436463921783294
 MonoBehaviour:
@@ -1489,7 +1489,7 @@ MonoBehaviour:
   Path: Assets/Audio/RedlineSounds/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638742640487322252
+  lastModified: 638743270050730303
   FileSizes:
   - Name: Desktop
     Value: 3946
@@ -2302,7 +2302,7 @@ MonoBehaviour:
   Path: Assets/Audio/RedlineSounds/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638742640487322252
+  lastModified: 638743270050720334
   FileSizes:
   - Name: Desktop
     Value: 17370144
@@ -2501,7 +2501,7 @@ MonoBehaviour:
   Path: Assets/Audio/RedlineSounds/Build/Desktop/FulcrumEngine.bank
   Name: FulcrumEngine
   StudioPath: bank:/FulcrumEngine
-  lastModified: 638742640486717472
+  lastModified: 638743270050311340
   FileSizes:
   - Name: Desktop
     Value: 1538976

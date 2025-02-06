@@ -13,7 +13,7 @@ public class ManageSceneLoading : MonoBehaviour
     public void InitializeForMainMenu()
     {
         reloadingmenu = true;
-        GameManager.gManager.rActivator.DeactivateRedline();
+
         foreach (GameObject playerOBJ in GameManager.gManager.players)
         {
             ResetShip(playerOBJ);
@@ -21,16 +21,16 @@ public class ManageSceneLoading : MonoBehaviour
 
         GameManager.gManager.aC.SetParamValue("", 0.0f);
 
-        for (int i = GameManager.gManager.racerObjects.Count - 1; i >= 0; i--)
+        for (int i = GameManager.gManager.aiRacerObjects.Count - 1; i >= 0; i--)
         {
-            GameObject temp = GameManager.gManager.racerObjects[i];
+            GameObject temp = GameManager.gManager.aiRacerObjects[i];
 
             if (GameManager.gManager.allRacers.Contains(temp))
             {
                 GameManager.gManager.allRacers.Remove(temp);
             }
 
-            GameManager.gManager.racerObjects.Remove(temp);
+            GameManager.gManager.aiRacerObjects.Remove(temp);
 
             Destroy(temp);
         }
@@ -47,83 +47,19 @@ public class ManageSceneLoading : MonoBehaviour
 
     public void ResetShip(GameObject playerOBJ)
     {
-        InitializeBeforeRace IBR = playerOBJ.GetComponent<InitializeBeforeRace>();
-        AIMoveInputs aiMove = playerOBJ.GetComponent<AIMoveInputs>();
-        ShipsControls controls = playerOBJ.GetComponent<ShipsControls>();
-        IsShipCollider shipCollider = controls.collisionParent.GetComponentInChildren<IsShipCollider>();
-        RacerDetails racerDeets = playerOBJ.GetComponent<RacerDetails>();
-        PlayerInputScript playerInputScript = playerOBJ.GetComponent<PlayerInputScript>();
-        ActionMappingControl acm = playerOBJ.GetComponent<ActionMappingControl>();
+        GameObject tempShip = playerOBJ.GetComponent<PlayerInputScript>().GetShipControls().gameObject;
 
-        GameObject shipCollisionObject = shipCollider.gameObject;
-        GameObject shipModelObject = controls.shipModel.transform.GetChild(0).gameObject;
-        DestroyImmediate(playerOBJ.GetComponent<AIMoveInputs>());
+        playerOBJ.GetComponent<PlayerInputScript>().SetShipControls(null);
+        playerOBJ.GetComponent<PlayerInputScript>().uiController = null;
 
-        if (GameManager.gManager.SAM != null)
-        {
-            GameManager.gManager.SAM.CheckAllAchievementProgress(GameManager.gManager.players[0].GetComponent<RacerDetails>().placement);
-        }
+        if (GameManager.gManager.playerShips.Contains(tempShip))
+            GameManager.gManager.playerShips.Remove(tempShip);
+        if (GameManager.gManager.allRacers.Contains(tempShip))
+            GameManager.gManager.playerShips.Remove(tempShip);
 
-        playerInputScript.GetComponent<ShipToWallCollision>().ResetDetails();
+        Destroy(tempShip);
 
-        controls.FireList.Clear();
-        controls.VariantObject = null;
-
-        shipCollisionObject.transform.parent = null;
-        shipModelObject.transform.parent = null;
-
-        Destroy(shipCollisionObject);
-        Destroy(shipModelObject);
-
-        playerInputScript.playerReadyInMenu = false;
-        playerInputScript.cam.gameObject.SetActive(false);
-        playerInputScript.DeActivateVirtualCam();
-
-        racerDeets.finishedRacing = false;
-        racerDeets.currentLap = 0;
-        racerDeets.totalRaceTimeSeconds = 0;
-        racerDeets.totalRaceTimeMinutes = 0;
-        racerDeets.currentLapTimeSECONDS = 0;
-        racerDeets.currentLapTimeMINUTES = 0;
-        racerDeets.quickestLapTimeSECONDS = 99;
-        racerDeets.quickestLapTimeMINUTES = 99;
-
-        SparksParticlesController SPC = playerOBJ.GetComponentInChildren<SparksParticlesController>();
-        if (SPC != null)
-        {
-            foreach (SparksTrigger sT in SPC.sparksList)
-            {
-                if (sT != null)
-                {
-                    sT.isColliding = false;
-
-                    foreach (VisualEffect sparksOBJ in sT.sparks)
-                    {
-                        if (sparksOBJ != null)
-                        {
-                            SPC.DeactivateSparks(sparksOBJ, sT);
-                        }
-                    }
-                }
-            }
-        }
-
-        controls.ChangeDoneDifficulty(false);
-        controls.DeInitialize();
-
-        controls.ResetRedline();
-
-        playerOBJ.GetComponent<ShipsControls>().enabled = false;
-        playerOBJ.GetComponent<ShipBlendAnimations>().enabled = false;
-
-        racerDeets.rCS.ClearList();
-        ShipToWallCollision stwc = playerOBJ.GetComponent<ShipToWallCollision>();
-
-
-        foreach (GameObject player in GameManager.gManager.players)
-        {
-            player.GetComponent<PlayerAudioController>().ResetPlayerAudio();
-        }
+        playerOBJ.GetComponent<PlayerInputScript>().playerReadyInMenu = false;
     }
 
     public void ResetGameManager()
@@ -134,7 +70,7 @@ public class ManageSceneLoading : MonoBehaviour
         GameManager.gManager.readyForCountdown = false;
         GameManager.gManager.pHandler.racerFinder = new List<RacerDetails>();
         GameManager.gManager.pHandler.racers = new List<RacerDetails>();
-        GameManager.gManager.racerObjects = new List<GameObject>();
+        GameManager.gManager.aiRacerObjects = new List<GameObject>();
         GameManager.gManager.racersPlaced = false;
         GameManager.gManager.raceFinished = false;
         GameManager.gManager.raceStarted = false;
@@ -173,7 +109,6 @@ public class ManageSceneLoading : MonoBehaviour
         if (reloadingmenu == true)
         {
             reloadingmenu = false;
-            ActionMappingControl aMC = GameManager.gManager.players[0].GetComponent<ActionMappingControl>();
         }
     }
 }

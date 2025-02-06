@@ -131,9 +131,9 @@ public class RacerDetails : MonoBehaviour
         if (GameManager.gManager.raceStarted == false && nameSet == false)
         {
             nameSet = true;
-            for (int i = 0; i < GameManager.gManager.players.Count; i++)
+            for (int i = 0; i < GameManager.gManager.playerShips.Count; i++)
             {
-                if (GameManager.gManager.players[i] == this.gameObject)
+                if (GameManager.gManager.playerShips[i] == this.gameObject)
                 {
                     //Debug.Log("Player Index: " + i);
                     RacerName = ("Player" + (i + 1));

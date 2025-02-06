@@ -9,7 +9,7 @@ public class CorkscrewReset : MonoBehaviour
 
     private void Awake()
     {
-        foreach (GameObject racerOBJ in GameManager.gManager.players)
+        foreach (GameObject racerOBJ in GameManager.gManager.playerShips)
         {
             RacerDetails rDeets = racerOBJ.GetComponent<RacerDetails>();
 

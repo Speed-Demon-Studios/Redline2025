@@ -112,7 +112,7 @@ public class TestingEditor : EditorWindow
             m_player.GetComponent<ActionMappingControl>().UpdateActionMapForRace();
 
             m_player.GetComponent<PlayerInputScript>().enabled = true;
-            m_player.GetComponent<PlayerInputScript>().cam.gameObject.SetActive(true);
+            //m_player.GetComponent<PlayerInputScript>().cam.gameObject.SetActive(true);
 
             m_player.GetComponent<ShipsControls>().AttachModels();
 

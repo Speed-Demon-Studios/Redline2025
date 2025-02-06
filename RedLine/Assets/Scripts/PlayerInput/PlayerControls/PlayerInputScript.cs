@@ -1,44 +1,94 @@
-using Cinemachine;
 using MenuManagement;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.UI;
 using UnityEngine.InputSystem.Users;
 using UnityEngine.UI;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class PlayerInputScript : MonoBehaviour
 {
     [Header("References")]
+    public PlayerUiControl uiController;
+
     public PlayerInput player;
     public MultiplayerEventSystem eventSystem;
-    public PlayerUiControl uiController;
     private ShipsControls m_shipControls;
     private Gamepad m_playerGamepad;
     private GameManager gMan;
     private ShipSelection m_selection;
 
-    [Header("Player Camera Stuff")]
-    public List<int> playerLayers = new();
-    public List<LayerMask> ignoreLayers = new();
-    public Camera cam;
-    [SerializeField] private CinemachineVirtualCamera m_virtualCam;
-
-    [Header("Camera Values")]
-    private float m_currentFOV;
-    private float m_desiredFOV;
-    public float lerpTime;
-    public float minFOV;
-    public float maxFOV;
-
     private bool m_alreadyLoadedIn = false;
     private int m_playerNumber;
     public bool playerReadyInMenu;
 
+    static private ShipVariant m_ship;
+    static private int m_shipMaterialNumber;
+    static private int m_shipIndex;
+    public GameObject shipPrefab;
+
+    public void SetShipInfo(ShipVariant ship, int shipMaterialNumber, int shipIndex)
+    {
+        m_ship = ship;
+        m_shipMaterialNumber = shipMaterialNumber;
+        m_shipIndex = shipIndex;
+    }
+
+    public void InstantiateShip()
+    {
+        GameObject ship = Instantiate(shipPrefab);
+
+        m_shipControls = ship.GetComponent<ShipsControls>();
+        uiController = ship.GetComponentInChildren<PlayerUiControl>();
+
+        ship.GetComponent<ShipsControls>().VariantObject = m_ship;
+        ship.GetComponent<ShipsControls>().enabled = true; // Enables shipControls for movement
+        ship.GetComponent<ShipsControls>().shipSelected = m_shipIndex;
+        ship.GetComponent<ShipsControls>().SetMaterialIndex(m_shipMaterialNumber);
+
+        if (ship.GetComponent<VariantAudioContainer>() != null)
+        {
+            ship.GetComponent<VariantAudioContainer>().CheckVariant(m_shipIndex);
+            ship.GetComponent<ShipsControls>().shipSelected = m_shipIndex;
+        }
+
+        if (ship.GetComponent<ShipBlendAnimations>()) // if the ship selected has animations
+            ship.GetComponent<ShipBlendAnimations>().enabled = true; // set the refrenece for animations
+
+        RedlineColliderSpawner redline = null;
+
+        foreach (Transform child in ship.transform) // for each child object in the player object
+        {
+            if (child.GetComponent<RedlineColliderSpawner>()) // If the child object has a redline collider spawner script
+                redline = child.GetComponent<RedlineColliderSpawner>(); // then assign it to the redline reference
+        }
+        ship.GetComponent<ShipsControls>().Initialize(); // Initialize Player ready for race
+        ship.GetComponent<ShipsControls>().MaxSpeedCatchupChange(1);
+        foreach (Transform child in ship.transform) // do another check on the redline collider spawner reference
+        {
+            FindEveryChild(child, redline);
+        }
+
+        GameManager.gManager.playerShips.Add(ship);
+        GameManager.gManager.allRacers.Add(ship);
+    }
+
+    /// <summary>
+    /// go through every child object in each object untill you find the trailSpawner
+    /// </summary>
+    /// <param name="parent"> the parent </param>
+    /// <param name="redline"> reference to the redline collider spawner script </param>
+    public void FindEveryChild(Transform parent, RedlineColliderSpawner redline)
+    {
+        foreach (Transform child in parent)
+        {
+            if (child.CompareTag("TrailSpawn"))
+                redline.spawnPoint = child;
+
+            if (child.transform.childCount > 0)
+                FindEveryChild(child, redline);
+        }
+    }
 
     /////////////////////////////////////////////////////////////////
     ///                                                          ///
@@ -50,10 +100,12 @@ public class PlayerInputScript : MonoBehaviour
 
     public void SetSelection(ShipSelection selection) { m_selection = selection; }
     public ShipSelection GetShipSelection() { return m_selection; }
+    public ShipsControls GetShipControls() { return m_shipControls; }
     public Gamepad GetPlayerGamepad() { return m_playerGamepad; }
-    public ShipSelection ReturnShipSelection() { return m_selection; }
-    public void ActivateVirtualCam() { m_virtualCam.gameObject.SetActive(true); }
-    public void DeActivateVirtualCam() { m_virtualCam.gameObject.SetActive(false); }
+    public PlayerInput GetPlayerInput() { return player; }
+    public void SetPlayerInput(PlayerInput playerInput) { player = playerInput; }
+    public void SetShipControls(ShipsControls controls) { m_shipControls = controls; }
+    public void SetEventSystem(MultiplayerEventSystem eventSystem) { this.eventSystem = eventSystem; }
 
     // Start is called before the first frame update
     private void Awake()
@@ -64,7 +116,11 @@ public class PlayerInputScript : MonoBehaviour
 
     public void Inistialize()
     {
-        m_shipControls = GetComponentInParent<ShipsControls>(); // getting the objects shipControls script which would be on the parent
+        ActionMappingControl amc = this.GetComponent<ActionMappingControl>();
+
+        amc.SetPlayerInput(player);
+        amc.SetmES(eventSystem);
+
         gMan = GameManager.gManager; // seting a reference to the GameManager
         //m_virtualCam.gameObject.SetActive(true);
 
@@ -93,20 +149,8 @@ public class PlayerInputScript : MonoBehaviour
         {
             AssignController(); // calls a function that help setup controllers for feedback   
         }
-        if (!m_shipControls.isTestShip)
-        {
-            SwitchCameraLayers(m_playerNumber - 1);
-        }
 
         m_alreadyLoadedIn = true;
-    }
-
-    public void SwitchCameraLayers(int playerNumber)
-    {
-        if (m_virtualCam != null && playerLayers.Count > 0)
-            m_virtualCam.gameObject.layer = playerLayers[playerNumber];
-        if (cam != null && playerLayers.Count > 0)
-            cam.cullingMask = ignoreLayers[playerNumber];
     }
 
     /// <summary>
@@ -116,27 +160,6 @@ public class PlayerInputScript : MonoBehaviour
     {
         if (GameManager.gManager.CurrentScene != "Race")
         {
-            // this for loop will go through all other player and set their player number down 1 so if player 2 disconnects then player 3
-            // will now become player 2
-            for (int i = m_playerNumber - 1; i < GameManager.gManager.players.Count; i++)
-            {
-                if (GameManager.gManager.players[i].GetComponent<PlayerInputScript>().GetPlayerNumber() > m_playerNumber)
-                {
-                    GameManager.gManager.players[i].GetComponent<PlayerInputScript>().SetPlayerNumber(i);
-//                    GameManager.gManager.players[i].GetComponent<PlayerInputScript>().player.
-                }
-            }
-            foreach(Transform child in GameManager.gManager.uiCInput.GetMenuManager().gameObject.transform)
-            {
-                SetMenu temp;
-                if(child.TryGetComponent<SetMenu>(out temp))
-                {
-                    if(temp.typeOfMenu == MenuType.ShipSelectionReady)
-                    {
-                        temp.menuStartButtons.Remove(m_selection.GetComponentInChildren<Button>().gameObject);
-                    }
-                }
-            }
             foreach (InputDevice device in InputUser.GetUnpairedInputDevices())
             {
                 InputUser.GetUnpairedInputDevices().Remove(device);
@@ -144,14 +167,6 @@ public class PlayerInputScript : MonoBehaviour
 
             Destroy(m_selection.gameObject);
 
-            if (GameManager.gManager.players.Contains(this.gameObject)) // if the players list contains this object
-            {
-                GameManager.gManager.players.Remove(this.gameObject); // then remove it from the list
-            }
-            if (GameManager.gManager.allRacers.Contains(this.gameObject)) // if the playerObjects list contains this object
-            {
-                GameManager.gManager.allRacers.Remove(this.gameObject); // then remove the object from the list
-            }
             GameManager.gManager.numberOfPlayers -= 1;
 
             // -1 from number of player in the uicontroller script
@@ -161,12 +176,26 @@ public class PlayerInputScript : MonoBehaviour
             gMan.uiCInput.GetMenuManager().SetButtons(gMan.uiCInput.GetMenuManager().GetCurrentMenu());
             GameManager.gManager.uiCInput.GetMenuManager().BackGroundPanelForSelection();
 
-            for (int i = m_playerNumber - 1; i < GameManager.gManager.players.Count; i++)
+            GameObject inputSystemSetToDestroy = GameManager.gManager.players[GameManager.gManager.players.Count];
+
+            for(int i = 0; i < GameManager.gManager.players.Count; i++)
             {
-                GameManager.gManager.players[i].GetComponent<PlayerInputScript>().SwitchCameraLayers(i);
+                if (GameManager.gManager.players[i].GetComponent<PlayerInputScript>().GetPlayerNumber() < m_playerNumber)
+                    return;
+
+                if (i + 1 > GameManager.gManager.players.Count)
+                    return;
+
+                DestroyImmediate(GameManager.gManager.players[i].GetComponent<PlayerInputScript>().GetShipControls());
+
+                GameManager.gManager.players[i].GetComponent<PlayerInputScript>().SetShipControls(null);
+                GameManager.gManager.players[i].GetComponent<PlayerInputScript>().uiController = null;
+
+                GameManager.gManager.players[i].GetComponent<PlayerInputScript>().SetShipControls(GameManager.gManager.players[i + 1].GetComponent<PlayerInputScript>().GetShipControls());
+                GameManager.gManager.players[i].GetComponent<PlayerInputScript>().uiController = GameManager.gManager.players[i + 1].GetComponent<PlayerInputScript>().uiController;
             }
 
-            Destroy(this.gameObject);
+            Destroy(inputSystemSetToDestroy);
         }
         else
         {
@@ -197,31 +226,7 @@ public class PlayerInputScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (GameManager.gManager.raceStarted == true && GameManager.gManager.raceFinished == false) // if the race has started and not finished
-        {
-            CalculateFOV(); // calculate the FOV for the camera
-        }
-    }
 
-    private void CalculateFOV()
-    {
-        // calculating how fast the ships going compaired to the top speed as a percentage                                  
-        float speedPercentage = m_shipControls.RB.velocity.magnitude / m_shipControls.VariantObject.DefaultMaxSpeed;
-        // if the ship is moving slightly
-        if(speedPercentage > 0.001)
-        {
-            m_desiredFOV = ((maxFOV - minFOV) * speedPercentage) + minFOV; // calculate the desiredFOV                      
-        }
-        else // if its not moving
-        {
-            m_desiredFOV = minFOV; // then the FOV is now the min it can go
-        }
-        //m_desiredPOV = Mathf.Lerp(minPOV, maxPOV, speedPercentage);
-
-        m_currentFOV = Mathf.Lerp(m_currentFOV, m_desiredFOV, lerpTime); // lerp to the desiredFOV so that its smooth
-        m_currentFOV = Mathf.Clamp(m_currentFOV, 0, maxFOV + 10);
-        if(m_virtualCam != null) 
-            m_virtualCam.m_Lens.FieldOfView = m_currentFOV; // set the FOV to the currentFOV                                
     }
 
     /// <summary>

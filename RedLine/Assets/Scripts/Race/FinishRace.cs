@@ -56,7 +56,7 @@ public class FinishRace : MonoBehaviour
 
             foreach (GameObject racer in GameManager.gManager.allRacers)
             {
-                if (GameManager.gManager.players.Contains(racer) == false)
+                if (GameManager.gManager.playerShips.Contains(racer) == false)
                 {
                     RacerDetails rDeets = racer.GetComponent<RacerDetails>();
 
@@ -118,7 +118,7 @@ public class FinishRace : MonoBehaviour
                 {
                     readyToDisplay = true;
 
-                    if (GameManager.gManager.players.Contains(racerOBJ))
+                    if (GameManager.gManager.playerShips.Contains(racerOBJ))
                     {
                         if (racerDeets.finishedRacing == true)
                         {
@@ -180,8 +180,8 @@ public class FinishRace : MonoBehaviour
         ActionMappingControl aMC = GameManager.gManager.players[0].GetComponent<ActionMappingControl>(); // Get a reference to player ones ActionMappingControl script.
         aMC.UpdateActionMapForUI();
         aMC.SwitchActionMapToUI();
-        aMC.mES.SetSelectedGameObject(mainButton); // Set player ones MultiplayerEventSystem's selectedGameObject to the mainButton object.
-        aMC.mES.firstSelectedGameObject = mainButton;
+        aMC.GetmES().SetSelectedGameObject(mainButton); // Set player ones MultiplayerEventSystem's selectedGameObject to the mainButton object.
+        aMC.GetmES().firstSelectedGameObject = mainButton;
     }
 
     public bool AllRacersFinishedCheck()
@@ -193,7 +193,7 @@ public class FinishRace : MonoBehaviour
         m_allRacersCrosedLine = true;
 
         // Iterate through all of the PLAYER objects.
-        foreach (GameObject racerOBJ in GameManager.gManager.players)
+        foreach (GameObject racerOBJ in GameManager.gManager.playerShips)
         {
             RacerDetails rDeets = racerOBJ.GetComponent<RacerDetails>();
             if (rDeets.crossedFinishLine == false)
@@ -208,10 +208,10 @@ public class FinishRace : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < GameManager.gManager.players.Count; i++)
+        for (int i = 0; i < GameManager.gManager.playerShips.Count; i++)
         {
             m_allRacersFinished = true;
-            RacerDetails rDeets = GameManager.gManager.players[i].GetComponent<RacerDetails>();
+            RacerDetails rDeets = GameManager.gManager.playerShips[i].GetComponent<RacerDetails>();
 
             if (rDeets.crossedFinishLine == false)
             {
@@ -247,7 +247,7 @@ public class FinishRace : MonoBehaviour
         m_allRacersCrosedLine = true;
 
         // Iterate through all of the PLAYER objects.
-        foreach (GameObject racerOBJ in GameManager.gManager.players)
+        foreach (GameObject racerOBJ in GameManager.gManager.playerShips)
         {
             RacerDetails rDeets = racerOBJ.GetComponent<RacerDetails>();
             if (rDeets.crossedFinishLine == false)
@@ -262,10 +262,10 @@ public class FinishRace : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < GameManager.gManager.players.Count; i++)
+        for (int i = 0; i < GameManager.gManager.playerShips.Count; i++)
         {
             m_allRacersFinished = true;
-            RacerDetails rDeets = GameManager.gManager.players[i].GetComponent<RacerDetails>();
+            RacerDetails rDeets = GameManager.gManager.playerShips[i].GetComponent<RacerDetails>();
 
             if (rDeets.crossedFinishLine == false)
             {

@@ -39,11 +39,11 @@ public class PositionHandler : MonoBehaviour
                 if (aiShip.GetComponent<RacerDetails>() != null)
                     aiShip.GetComponent<RacerDetails>().rCS.CallSpawnCollider();
 
-                GameManager.gManager.racerObjects.Add(aiShip);
+                GameManager.gManager.aiRacerObjects.Add(aiShip);
             }
         }
 
-        foreach(GameObject players in GameManager.gManager.players)
+        foreach(GameObject players in GameManager.gManager.playerShips)
         {
             racers.Add(players.GetComponent<RacerDetails>());
         }

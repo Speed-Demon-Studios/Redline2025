@@ -30,8 +30,9 @@ public class GameManager : MonoBehaviour
     public GameObject[] StartingPoints;
 
     public List<GameObject> players;
+    public List<GameObject> playerShips;
     public IList<GameObject> allRacers = new List<GameObject>();
-    public IList<GameObject> racerObjects = new List<GameObject>();
+    public IList<GameObject> aiRacerObjects = new List<GameObject>();
 
     public bool finalLap = false;
     private int m_playerInteractingWithPause;
@@ -119,7 +120,7 @@ public class GameManager : MonoBehaviour
         if (resetRacerVariables == true)
         {
             resetRacerVariables = false;
-            foreach (GameObject playerOBJ in players)
+            foreach (GameObject playerOBJ in playerShips)
             {
                 RacerDetails rDeets = playerOBJ.GetComponent<RacerDetails>();
 
@@ -131,9 +132,9 @@ public class GameManager : MonoBehaviour
         {
             disablePlayerCams = false;
 
-            if (players.Count > 0)
+            if (playerShips.Count > 0)
             {
-                foreach (GameObject playerOBJ in players)
+                foreach (GameObject playerOBJ in playerShips)
                 {
                     InitializeBeforeRace rDeets = playerOBJ.GetComponent<InitializeBeforeRace>();
 
@@ -149,9 +150,9 @@ public class GameManager : MonoBehaviour
         {
             enablePlayerCams = false;
 
-            if (players.Count > 0)
+            if (playerShips.Count > 0)
             {
-                foreach (GameObject playerOBJ in players)
+                foreach (GameObject playerOBJ in playerShips)
                 {
                     InitializeBeforeRace rDeets = playerOBJ.GetComponent<InitializeBeforeRace>();
 
@@ -219,7 +220,7 @@ public class GameManager : MonoBehaviour
         }
         else if (racer == null)
         {
-            foreach (GameObject racerOBJ in racerObjects)
+            foreach (GameObject racerOBJ in aiRacerObjects)
             {
                 InitializeBeforeRace rDeets = racerOBJ.GetComponent<InitializeBeforeRace>();
                 Rigidbody rB = racerOBJ.GetComponent<Rigidbody>();

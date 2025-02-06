@@ -582,9 +582,9 @@ namespace EAudioSystem
             if (add == true && subtract == true || add == false && subtract == false)
             {
                 int playerListIndex = 0;
-                for (int i = 0; i < GameManager.gManager.players.Count; i++)
+                for (int i = 0; i < GameManager.gManager.playerShips.Count; i++)
                 {
-                    if (GameManager.gManager.players[i] = this.gameObject)
+                    if (GameManager.gManager.playerShips[i] = this.gameObject)
                     {
                         playerListIndex = i;
                         break;
@@ -703,9 +703,9 @@ namespace EAudioSystem
             if (add == true && subtract == true || add == false && subtract == false)
             {
                 int playerListIndex = 0;
-                for (int i = 0; i < GameManager.gManager.players.Count; i++)
+                for (int i = 0; i < GameManager.gManager.playerShips.Count; i++)
                 {
-                    if (GameManager.gManager.players[i] = this.gameObject)
+                    if (GameManager.gManager.playerShips[i] = this.gameObject)
                     {
                         playerListIndex = i;
                         break;

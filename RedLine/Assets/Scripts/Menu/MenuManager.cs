@@ -33,7 +33,6 @@ namespace MenuManagement
         public MenuType GetCurrentType() { return m_currentMenuType; }
         public SetMenu GetCurrentMenu() { return m_currentMenu; }
 
-        // Start is called before the first frame update
         public void Inistialize()
         {
             m_currentMenu = start;

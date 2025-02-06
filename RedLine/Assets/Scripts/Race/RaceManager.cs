@@ -24,8 +24,12 @@ public class RaceManager : MonoBehaviour
         GameManager.gManager.enablePlayerCams = true;
         GameManager.gManager.raceFinished = false;
         GameManager.gManager.raceStarted = false;
+        foreach(GameObject players in GameManager.gManager.players)
+        {
+            players.GetComponent<PlayerInputScript>().InstantiateShip();
 
-        foreach (GameObject playerOBJ in GameManager.gManager.players)
+        }
+        foreach (GameObject playerOBJ in GameManager.gManager.playerShips)
         {
             playerOBJ.GetComponent<InitializeBeforeRace>().Initialize();
         }
@@ -97,13 +101,13 @@ public class RaceManager : MonoBehaviour
     {
         if (racer == null)
         {
-            for (int i = 0; i < GameManager.gManager.players.Count; i++)
+            for (int i = 0; i < GameManager.gManager.playerShips.Count; i++)
             {
-                RacerDetails racerDeets = GameManager.gManager.players[i].GetComponent<RacerDetails>();
+                RacerDetails racerDeets = GameManager.gManager.playerShips[i].GetComponent<RacerDetails>();
 
                 if (racerDeets.finishedRacing == true && racerDeets.crossedFinishLine == true)
                 {
-                    GameManager.gManager.DisableRMovement(GameManager.gManager.players[i]);
+                    GameManager.gManager.DisableRMovement(GameManager.gManager.playerShips[i]);
                 }
             }
         }
@@ -148,7 +152,7 @@ public class RaceManager : MonoBehaviour
                 FinishRace();
             }
 
-            if (GameManager.gManager.players.Contains(racer.gameObject))
+            if (GameManager.gManager.playerShips.Contains(racer.gameObject))
                 DisableFinishedRacerMovement();
             else
                 DisableFinishedRacerMovement(racer);

@@ -197,19 +197,7 @@ public class ShipSelection : MonoBehaviour
         if (!m_ship.GetComponent<PlayerInputScript>().playerReadyInMenu)
         {
             // Sets ship variants
-            m_ship.GetComponent<ShipsControls>().VariantObject = variants[m_shipIndex];
-            m_ship.GetComponent<ShipsControls>().enabled = true; // Enables shipControls for movement
-            m_ship.GetComponent<ShipsControls>().shipSelected = m_shipIndex;
-            m_ship.GetComponent<ShipsControls>().SetMaterialIndex(m_materialIndex);
-
-            if (m_ship.GetComponent<VariantAudioContainer>() != null)
-            {
-                m_ship.GetComponent<VariantAudioContainer>().CheckVariant(m_shipIndex);
-                m_ship.GetComponent<ShipsControls>().shipSelected = m_shipIndex;
-            }
-
-            if (m_ship.GetComponent<ShipBlendAnimations>()) // if the ship selected has animations
-                m_ship.GetComponent<ShipBlendAnimations>().enabled = true; // set the refrenece for animations
+            m_ship.GetComponent<PlayerInputScript>().SetShipInfo(variants[m_shipIndex], m_materialIndex, m_shipIndex);
 
             GameManager.gManager.uiCInput.ReadyPlayer(m_playerNum); // Readys this player
 

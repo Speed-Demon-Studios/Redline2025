@@ -64,26 +64,15 @@ namespace MenuManagement
             {
                 foreach (GameObject player in GameManager.gManager.players) // For each player in the player list
                 {
-                    player.GetComponent<PlayerInputScript>().player.SwitchCurrentActionMap("Player"); // Switch the action map to player
-                    RedlineColliderSpawner redline = null; // Makes a new reference to the redline collider spawner script
-                    player.GetComponent<PlayerInputScript>().ActivateVirtualCam();
-                    foreach (Transform child in player.transform) // for each child object in the player object
-                    {
-                        if (child.GetComponent<RedlineColliderSpawner>()) // If the child object has a redline collider spawner script
-                            redline = child.GetComponent<RedlineColliderSpawner>(); // then assign it to the redline reference
-                    }
-                    player.GetComponent<ShipsControls>().Initialize(); // Initialize Player ready for race
-                    player.GetComponent<ShipsControls>().MaxSpeedCatchupChange(1);
-                    foreach (Transform child in player.transform) // do another check on the redline collider spawner reference
-                    {
-                        FindEveryChild(child, redline);
-                    }
+                    player.GetComponent<PlayerInputScript>().GetPlayerInput().SwitchCurrentActionMap("Player"); // Switch the action map to player
+                    //player.GetComponent<PlayerInputScript>().ActivateVirtualCam();
+
                     ActionMappingControl aMC = player.GetComponent<ActionMappingControl>(); // Reseting the first selected buttons 
-                    aMC.mES.firstSelectedGameObject = null;
-                    aMC.mES.SetSelectedGameObject(null);
+                    aMC.GetmES().firstSelectedGameObject = null;
+                    aMC.GetmES().SetSelectedGameObject(null);
                 }
 
-                GameManager.gManager.racerObjects = new List<GameObject>(); // Empty the racerObject List
+                GameManager.gManager.aiRacerObjects = new List<GameObject>(); // Empty the racerObject List
                 for (int i = GameManager.gManager.allRacers.Count - 1; i >= 0; i--)
                 {
                     GameObject temp = GameManager.gManager.allRacers[i];
@@ -95,23 +84,6 @@ namespace MenuManagement
                 }
                 PlayerPrefs.SetInt("SceneID", 2);
                 SceneManager.LoadSceneAsync(3); // Load the new race scene
-            }
-        }
-
-        /// <summary>
-        /// go through every child object in each object untill you find the trailSpawner
-        /// </summary>
-        /// <param name="parent"> the parent </param>
-        /// <param name="redline"> reference to the redline collider spawner script </param>
-        public void FindEveryChild(Transform parent, RedlineColliderSpawner redline)
-        {
-            foreach (Transform child in parent)
-            {
-                if (child.CompareTag("TrailSpawn"))
-                    redline.spawnPoint = child;
-
-                if (child.transform.childCount > 0)
-                    FindEveryChild(child, redline);
             }
         }
 
@@ -163,7 +135,7 @@ namespace MenuManagement
             if (GameManager.gManager.players[playerNumber].GetComponent<PlayerInputScript>().playerReadyInMenu == true)
             {
                 GameManager.gManager.players[playerNumber].GetComponent<PlayerInputScript>().playerReadyInMenu = false;//the number of players ready
-                GameManager.gManager.players[playerNumber].GetComponent<PlayerInputScript>().ReturnShipSelection().UnReady();
+                GameManager.gManager.players[playerNumber].GetComponent<PlayerInputScript>().GetShipSelection().UnReady();
                 unReadyedThisTurn = true;
             }
             else { unReadyedThisTurn = false; }
@@ -201,8 +173,8 @@ namespace MenuManagement
 
         public void ResetFirstButton(int playerNumber, GameObject button)
         {
-            GameManager.gManager.players[playerNumber].GetComponent<ActionMappingControl>().mES.SetSelectedGameObject(button);
-            GameManager.gManager.players[playerNumber].GetComponent<ActionMappingControl>().mES.firstSelectedGameObject = button;
+            GameManager.gManager.players[playerNumber].GetComponent<ActionMappingControl>().GetmES().SetSelectedGameObject(button);
+            GameManager.gManager.players[playerNumber].GetComponent<ActionMappingControl>().GetmES().firstSelectedGameObject = button;
         }
 
         /// <summary>
@@ -212,7 +184,7 @@ namespace MenuManagement
         {
             foreach (GameObject playerOBJ in GameManager.gManager.players)
             {
-                playerOBJ.GetComponent<PlayerInputScript>().ReturnShipSelection().SetUp();
+                playerOBJ.GetComponent<PlayerInputScript>().GetShipSelection().SetUp();
             }
         }
     }

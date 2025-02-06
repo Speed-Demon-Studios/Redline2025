@@ -7,16 +7,14 @@ using UnityEngine.InputSystem.UI;
 public class ActionMappingControl : MonoBehaviour
 {
     [SerializeField] private PlayerInput _playerInputActions;
-    public MultiplayerEventSystem mES;
-    private ShipsControls sControls;
-    private RacerDetails racerInfo;
-    private bool controlMapChanged = false;
+    private MultiplayerEventSystem mES;
     private int playerRacingActionMapIndex;
 
-    public PlayerInput GetPlayerInput()
-    {
-        return _playerInputActions;
-    }
+    public PlayerInput GetPlayerInput() { return _playerInputActions; }
+    public void SetPlayerInput(PlayerInput playerInput) { _playerInputActions = playerInput; }
+
+    public void SetmES(MultiplayerEventSystem mes) { mES = mes; }
+    public MultiplayerEventSystem GetmES() { return mES; }
 
     public void SwitchActionMapToPlayer()
     {
@@ -51,8 +49,6 @@ public class ActionMappingControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        racerInfo = this.GetComponent<RacerDetails>();
-        sControls = this.gameObject.GetComponent<ShipsControls>();
     }
 
     public void UpdateActionMapForRace()

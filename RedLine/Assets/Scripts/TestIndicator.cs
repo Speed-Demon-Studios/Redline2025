@@ -18,12 +18,12 @@ public class TestIndicator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.gManager.players.Count > targetIndex - 1 || GameManager.gManager.players[targetIndex - 1] != null)
+        if (GameManager.gManager.playerShips.Count > targetIndex - 1 || GameManager.gManager.playerShips[targetIndex - 1] != null)
         {
             this.gameObject.SetActive(true);
-            Vector3 screenPosTemp = main.WorldToScreenPoint(GameManager.gManager.players[targetIndex - 1].transform.position);
+            Vector3 screenPosTemp = main.WorldToScreenPoint(GameManager.gManager.playerShips[targetIndex - 1].transform.position);
             Vector2 screenPos = Vector3.zero;
-            switch (GameManager.gManager.players.Count)
+            switch (GameManager.gManager.playerShips.Count)
             {
                 case 1:
                     screenPos = new Vector2(screenPosTemp.x, screenPosTemp.y);

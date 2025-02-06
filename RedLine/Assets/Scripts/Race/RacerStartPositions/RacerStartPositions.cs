@@ -27,7 +27,7 @@ public class RacerStartPositions : MonoBehaviour
                 for (int i = 0; i < GameManager.gManager.allRacers.Count; i++)
                 {
                     bool isPlayer = false;
-                    foreach (GameObject playerOBJ in GameManager.gManager.players)
+                    foreach (GameObject playerOBJ in GameManager.gManager.playerShips)
                     {
                         if (GameManager.gManager.allRacers[i] == playerOBJ)
                         {
@@ -73,7 +73,7 @@ public class RacerStartPositions : MonoBehaviour
                     }
                 }
 
-                for (int i = 0; i < GameManager.gManager.players.Count; i++)
+                for (int i = 0; i < GameManager.gManager.playerShips.Count; i++)
                 {
                     for (int a = 0; a < startPositions.Count(); a++)
                     {
