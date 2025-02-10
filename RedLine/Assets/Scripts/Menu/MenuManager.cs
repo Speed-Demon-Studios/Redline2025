@@ -15,6 +15,7 @@ namespace MenuManagement
         Option,
         Credits,
         Difficulty,
+        OnlineLobby,
         ShipSelectionUnready,
         ShipSelectionReady
     }
