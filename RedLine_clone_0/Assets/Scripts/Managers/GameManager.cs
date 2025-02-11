@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public StudioEventEmitter musicEmitter;
     public AudioController aC;
     public PlayerInputManager PAM;
+    public LobbyManager lbManager;
 
     public GameObject[] StartingPoints;
 

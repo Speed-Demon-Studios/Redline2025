@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{2385ff85-70b7-4a37-8497-25479c079ba4}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
+		<property name="name">
+			<value>UiAudio</value>
+		</property>
+		<relationship name="masters">
+			<destination>{4c3bc0be-b157-4bc4-811d-845fb6884eb8}</destination>
+		</relationship>
+		<relationship name="effectChain">
+			<destination>{1d8780f1-7e5c-4b75-98b9-f9f571bb1dc8}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{c5564cf8-a645-4e58-b2bf-ee1885c5c95e}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{e0c822ee-5104-4dbb-8a37-2513954233f0}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{1d8780f1-7e5c-4b75-98b9-f9f571bb1dc8}">
+		<relationship name="effects">
+			<destination>{eefcb124-1417-4d77-8e7a-d9238a87ae60}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{c5564cf8-a645-4e58-b2bf-ee1885c5c95e}">
+		<property name="surroundPanExtent">
+			<value>90</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{eefcb124-1417-4d77-8e7a-d9238a87ae60}" />
+</objects>

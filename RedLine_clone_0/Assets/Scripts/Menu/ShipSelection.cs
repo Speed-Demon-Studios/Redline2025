@@ -192,14 +192,18 @@ public class ShipSelection : MonoBehaviour
     /// <summary>
     /// Once the player presses ready it sets all the variants to the shipControls and gets ready to spawn the models
     /// </summary>
-    public void Ready()
+    public void Ready(bool onlineOrNot)
     {
-        if (!m_ship.GetComponent<PlayerInputScript>().playerReadyInMenu)
+        if (!GameManager.gManager.players[m_playerNum].GetComponent<PlayerInputScript>().playerReadyInMenu)
         {
             // Sets ship variants
-            m_ship.GetComponent<PlayerInputScript>().SetShipInfo(variants[m_shipIndex], m_materialIndex, m_shipIndex);
+            GameManager.gManager.players[m_playerNum].GetComponent<PlayerInputScript>().SetShipInfo(variants[m_shipIndex], m_materialIndex, m_shipIndex);
 
-            GameManager.gManager.uiCInput.ReadyPlayer(m_playerNum); // Readys this player
+            if(!onlineOrNot)
+                GameManager.gManager.uiCInput.ReadyPlayer(m_playerNum); // Readys this player
+
+            if (onlineOrNot)
+                GameManager.gManager.lbManager.SwitchShipType(variants[m_shipIndex].VariantName);
 
             GameManager.gManager.uAC.PlayUISound(2);
 
@@ -210,14 +214,6 @@ public class ShipSelection : MonoBehaviour
     {
         if (!GameManager.gManager.raceAboutToStart)
         {
-            // Sets ship variants
-            m_ship.GetComponent<ShipsControls>().VariantObject = null;
-            m_ship.GetComponent<ShipsControls>().enabled = false; // Enables shipControls for movement 
-            m_ship.GetComponent<ShipBlendAnimations>().enabled = false; // set the refrenece for animations
-
-            if (m_ship.GetComponent<ShipBlendAnimations>()) // if the ship selected has animations
-                m_ship.GetComponent<ShipBlendAnimations>().enabled = false; // set the refrenece for animations
-
             GameManager.gManager.uAC.PlayUISound(3);
 
             sInfo.readyAnimator.SetTrigger(sInfo.unReadyTriggerString);

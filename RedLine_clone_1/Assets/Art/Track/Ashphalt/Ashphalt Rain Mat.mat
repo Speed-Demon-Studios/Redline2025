@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ashphalt Rain Mat
+  m_Shader: {fileID: -6465566751694194690, guid: 2436a7242ad138a4ea95d9faee96a58d,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Base_Colour:
+        m_Texture: {fileID: 2800000, guid: 25198be4bb460f248986e76b3588b44c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Base_Normal:
+        m_Texture: {fileID: 2800000, guid: 1d949eb50bfbec146a0f05220b16ea91, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Base_RMAE:
+        m_Texture: {fileID: 2800000, guid: e009e0acb4c2333479e85c2f3c79584e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_34b236e265504e009b9b441ce7acf5ff_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_34b236e265504e009b9b441ce7acf5ff_Texture_1_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_6eb3072ace184485a34d12206c6c469a_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_8634020acbf84c5cb70f582ed710603e_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _rippleFlowTexture:
+        m_Texture: {fileID: 2800000, guid: fbe2a0da1efd78143a3b8a256da45bb2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _rippleSheet:
+        m_Texture: {fileID: 2800000, guid: 484fca462ece5254986b0f628929bcc0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Flow_Distortion_Strength: 0.003
+    - _Flow_distortion_scale: 10
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _maskSpeed: 2.06
+    - _rippleAmount: 0.687
+    - _rippleFlowAmount: 0
+    - _rippleFlowTiling: 6.99
+    - _rippleFlowUVDistortion: 0.008
+    - _rippleSpeed: 20
+    - _rippleTile: 13
+    - _rippleTile2: 17
+    - _tiling: 1
+    - _tintAmount: 0
+    - _wetSurfaceSmoothness: 0.686
+    m_Colors:
+    - _Flow_Distortion_Speed: {r: 0.25, g: 0.1, b: 0, a: 0}
+    - _Ripple_Flow_Speed_1: {r: 0.2, g: 0.07, b: 0, a: 0}
+    - _Ripple_Flow_Speed_2: {r: -0.1, g: -0.2, b: 0, a: 0}
+    - _rainTint: {r: 0.002669984, g: 0.18488067, b: 0.18867916, a: 1}
+    - _ripple1Offset: {r: 0.15, g: -0.1, b: 0, a: 0}
+    - _ripple2Offset: {r: -0.2, g: 0.15, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &74224182028517386
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7

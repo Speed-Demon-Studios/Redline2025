@@ -235,7 +235,7 @@ public class PlayerInputScript : MonoBehaviour
     /// <param name="context"></param>
     public void OnRight(InputAction.CallbackContext context)
     {
-        if(m_selection != null)
+        if(m_selection != null && GameManager.gManager.uiCInput.GetMenuManager().GetCurrentType() == MenuType.ShipSelectionReady || GameManager.gManager.uiCInput.GetMenuManager().GetCurrentType() == MenuType.ShipSelectionUnready)
         {
             if(context.performed && !playerReadyInMenu)
                 m_selection.OnNext();
@@ -248,7 +248,7 @@ public class PlayerInputScript : MonoBehaviour
     /// <param name="context"></param>
     public void OnLeft(InputAction.CallbackContext context)
     {
-        if (m_selection != null)
+        if (m_selection != null && GameManager.gManager.uiCInput.GetMenuManager().GetCurrentType() == MenuType.ShipSelectionReady || GameManager.gManager.uiCInput.GetMenuManager().GetCurrentType() == MenuType.ShipSelectionUnready)
         {
             if (context.performed && !playerReadyInMenu)
                 m_selection.OnPrev();

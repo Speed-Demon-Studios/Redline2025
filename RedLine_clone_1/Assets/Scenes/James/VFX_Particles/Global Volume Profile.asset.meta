@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: d8fe4cdf9be3053428625e05c5d042c3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+=======
+guid: 0ddbdc7d8055c4642bb8fef3809e710c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+>>>>>>> origin/Jaxon
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
