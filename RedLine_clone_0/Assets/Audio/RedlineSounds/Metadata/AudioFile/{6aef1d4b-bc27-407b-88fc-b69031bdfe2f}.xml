@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6aef1d4b-bc27-407b-88fc-b69031bdfe2f}">
+		<property name="assetPath">
+			<value>MainEngineHumLoop.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>6.6873469387755105</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b3cd06a2-59cd-4311-9765-4069007cb72d}</destination>
+		</relationship>
+	</object>
+</objects>

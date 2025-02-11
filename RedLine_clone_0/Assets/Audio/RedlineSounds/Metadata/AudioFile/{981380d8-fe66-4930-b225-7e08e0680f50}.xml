@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{981380d8-fe66-4930-b225-7e08e0680f50}">
+		<property name="assetPath">
+			<value>Synth Faller (Blade Runner Pitch Down).wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>54.857145833333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b3cd06a2-59cd-4311-9765-4069007cb72d}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{16bd48ea-353d-468d-9e98-18af8342efe8}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
+		<property name="name">
+			<value>Cutlass</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{c5eb638a-96f7-424b-9217-16662b1c8af0}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{799c4670-472d-442e-b436-c7b3220efb80}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{6faccbb5-767b-4618-a6bb-ed73766c5825}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{c5eb638a-96f7-424b-9217-16662b1c8af0}">
+		<relationship name="effects">
+			<destination>{d229c70e-4a9f-461d-8e48-5c1f1cc32d71}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{799c4670-472d-442e-b436-c7b3220efb80}" />
+	<object class="MixerBusFader" id="{d229c70e-4a9f-461d-8e48-5c1f1cc32d71}" />
+</objects>

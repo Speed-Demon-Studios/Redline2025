@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{b7818ee1-2456-458c-833a-a408c18c4dcf}">
+		<property name="name">
+			<value>SetStereoOrMono</value>
+		</property>
+		<relationship name="folder">
+			<destination>{61e2ccca-5969-4412-9430-7fe7e0d8c325}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d4fca420-72da-46a6-abaa-035c1623ce7b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d4fca420-72da-46a6-abaa-035c1623ce7b}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Mono</value>
+			<value>Stereo</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

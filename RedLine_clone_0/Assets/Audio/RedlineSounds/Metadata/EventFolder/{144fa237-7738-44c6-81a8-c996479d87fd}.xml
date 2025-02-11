@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{144fa237-7738-44c6-81a8-c996479d87fd}">
+		<property name="name">
+			<value>SplitwingEngineLoop</value>
+		</property>
+		<relationship name="folder">
+			<destination>{184bff74-6320-4611-890c-bcd07f654262}</destination>
+		</relationship>
+	</object>
+</objects>
