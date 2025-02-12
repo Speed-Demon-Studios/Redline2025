@@ -18,8 +18,8 @@ namespace MenuManagement
         OnlineLobby,
         CreateLobby,
         InLobby,
-        ShipSelectionUnready,
-        ShipSelectionReady
+        ShipSelectionSoloNSplitScreen,
+        ShipSelectionOnline
     }
     public class MenuManager : MonoBehaviour
     {
@@ -64,7 +64,7 @@ namespace MenuManagement
 
         public void BackOutMenu(int playerNumber)
         {
-            if(m_currentMenuType != MenuType.ShipSelectionReady)
+            if(m_currentMenuType != MenuType.ShipSelectionSoloNSplitScreen)
                 m_currentMenu.OnBackButton();
             else
             {
@@ -89,7 +89,7 @@ namespace MenuManagement
 
             m_currentMenuType = switchingTo.typeOfMenu;
 
-            if (m_currentMenuType != MenuType.ShipSelectionReady)
+            if (m_currentMenuType != MenuType.ShipSelectionSoloNSplitScreen)
             {
                 foreach (GameObject panel in m_currentMenu.backGroundPanel)
                 {

@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 2868536069181459850}
   - component: {fileID: 6954287307719390781}
   - component: {fileID: 4394239317412869165}
+  - component: {fileID: 4160547588507072613}
   - component: {fileID: 2868536069181459848}
   - component: {fileID: 2868536069181459851}
   - component: {fileID: -6679554185345550660}
@@ -252,6 +253,25 @@ MonoBehaviour:
   pInput: {fileID: 0}
   aiInput: {fileID: 0}
   rb: {fileID: 2868536069181459851}
+--- !u!114 &4160547588507072613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868536069181459855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bf1b926efcb91e43bdfac1ee72a0a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayers: 
+  ignoreLayers: []
+  cam: {fileID: 2868536069371765821}
+  m_virtualCam: {fileID: 8177504199516520170}
+  lerpTime: 0.1
+  minFOV: 60
+  maxFOV: 90
 --- !u!114 &2868536069181459848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1826,3 +1846,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4018690711600948893}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8177504199516520170 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5096127917932451959, guid: 9fc4266d9e850bf45891b263eab70328,
+    type: 3}
+  m_PrefabInstance: {fileID: 4018690711600948893}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

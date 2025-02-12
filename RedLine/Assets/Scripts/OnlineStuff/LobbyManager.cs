@@ -89,6 +89,16 @@ public class LobbyManager : MonoBehaviour
         await AuthenticationService.Instance.SignInAnonymouslyAsync();
     }
 
+    public void UnInitialize()
+    {
+        GameManager.gManager.players[0].GetComponent<PlayerInputScript>().SetSelection(null);
+
+        AuthenticationService.Instance.SignedOut += () =>
+        {
+            Debug.Log("Player Signed Out");
+        };
+    }
+
     public async void CreateLobby()
     {
         try

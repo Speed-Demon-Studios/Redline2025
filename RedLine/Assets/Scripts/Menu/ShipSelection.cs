@@ -76,7 +76,7 @@ public class ShipSelection : MonoBehaviour
             index++;
         }
 
-        if (GameManager.gManager.uiCInput.GetMenuManager().GetCurrentType() == MenuType.ShipSelectionReady)
+        if (GameManager.gManager.uiCInput.GetMenuManager().GetCurrentType() == MenuType.ShipSelectionSoloNSplitScreen)
         {
             GameManager.gManager.uiCInput.GetMenuManager().SetButtons(GameManager.gManager.uiCInput.GetMenuManager().GetCurrentMenu());
             GameManager.gManager.uiCInput.GetMenuManager().BackGroundPanelForSelection();

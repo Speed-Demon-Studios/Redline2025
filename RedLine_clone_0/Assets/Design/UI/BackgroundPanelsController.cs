@@ -54,7 +54,7 @@ public class BackgroundPanelsController : MonoBehaviour
                 currentBGPanels = m_selectClass;
                 break;
 
-            case MenuType.ShipSelectionReady:
+            case MenuType.ShipSelectionSoloNSplitScreen:
                 currentBGPanels = m_selectShip;
                 break;
 
