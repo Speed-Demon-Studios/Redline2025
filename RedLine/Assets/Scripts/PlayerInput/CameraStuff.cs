@@ -27,6 +27,9 @@ public class CameraStuff : MonoBehaviour
     public void InitializCamera()
     {
         m_shipControls = GetComponent<ShipsControls>();
+        m_currentFOV = minFOV;
+        if (m_virtualCam != null)
+            m_virtualCam.m_Lens.FieldOfView = m_currentFOV; // set the FOV to the currentFOV      
     }
 
     // Update is called once per frame

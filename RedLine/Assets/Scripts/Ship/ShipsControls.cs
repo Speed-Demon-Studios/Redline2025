@@ -19,6 +19,7 @@ public class ShipsControls : MonoBehaviour
     private Rigidbody m_rb;
     private List<FireInfo> m_fire = new();
     public GameObject cameraRotationPoint;
+    private PlayerInputScript pIS;
     private int m_fireIndex;
     private int m_shipManiIndex;
     public bool isTestShip;
@@ -179,6 +180,14 @@ public class ShipsControls : MonoBehaviour
             }
             gameObject.GetComponent<ShipBlendAnimations>().Inistialize();
             shipModel.transform.GetComponentInChildren<ShipTypeInfo>().SwitchMaterials(m_shipManiIndex);
+            foreach(GameObject player in GameManager.gManager.players)
+            {
+                if (player.GetComponent<PlayerInputScript>().GetShipControls().gameObject == this.gameObject)
+                {
+                    Debug.Log("found input script");
+                    pIS = player.GetComponent<PlayerInputScript>();
+                }
+            }
         }
 
         DifficultySpeedChange();
@@ -479,7 +488,7 @@ public class ShipsControls : MonoBehaviour
             chargeSound1Played = false;
             chargeSound2Played = false;
             ControllerHaptics cRumble = this.gameObject.GetComponent<ControllerHaptics>();
-            PlayerInputScript pInput = this.gameObject.GetComponent<PlayerInputScript>();
+            PlayerInputScript pInput = pIS;
             if (cRumble != null && pInput != null)
             {
                 switch (m_boostLevel)

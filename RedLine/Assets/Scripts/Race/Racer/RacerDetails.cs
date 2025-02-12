@@ -10,6 +10,7 @@ public class RacerDetails : MonoBehaviour
     public GameObject corkscrewReset1;
     public GameObject corkscrewReset2;
     public IList<GameObject> resetNormalOBJs = new List<GameObject>();
+    private PlayerUiControl pUC;
 
     [Header("Script References")]
     public RedlineColliderSpawner rCS;
@@ -50,8 +51,11 @@ public class RacerDetails : MonoBehaviour
 
     private bool nameSet = false;         // Whether or not the racers name has been set.
 
+    public PlayerUiControl GetpUC() { return pUC; }
+
     private void Awake()
     {
+        pUC = GetComponentInChildren<PlayerUiControl>();
         if (GameManager.gManager.players.Contains(this.gameObject))
         {
             //GameManager.gManager.uAC.PlayerJoinSound();
@@ -175,21 +179,21 @@ public class RacerDetails : MonoBehaviour
                             currentLapTimeSECONDS = 0;
                             GameManager.gManager.timingsListUpdated = true;
                         } 
-                        if (currentLap != 0 && currentLap != GameManager.gManager.rManager.GetTotalLaps() && this.gameObject.GetComponent<PlayerInputScript>() != null)
+                        if (currentLap != 0 && currentLap != GameManager.gManager.rManager.GetTotalLaps() && GameManager.gManager.playerShips.Contains(this.gameObject))
                         {
-                            this.gameObject.GetComponent<PlayerInputScript>().uiController.newLapAnim.gameObject.SetActive(true);
-                            this.gameObject.GetComponent<PlayerInputScript>().uiController.newLapAnim.SetTrigger("NewLap");
+                            pUC.newLapAnim.gameObject.SetActive(true);
+                            pUC.newLapAnim.SetTrigger("NewLap");
                             if (GameManager.gManager.rManager.GetTotalLaps() - 1 == currentLap)
                             {
-                                this.gameObject.GetComponent<PlayerInputScript>().uiController.newLapAnim.GetComponent<NewLapInfo>().lapText.text = "Final Lap";
-                                this.gameObject.GetComponent<PlayerInputScript>().uiController.newLapAnim.GetComponent<NewLapInfo>().lapTextRed.text = "Final Lap";
+                                pUC.newLapAnim.GetComponent<NewLapInfo>().lapText.text = "Final Lap";
+                                pUC.newLapAnim.GetComponent<NewLapInfo>().lapTextRed.text = "Final Lap";
                             }
                             else
                             {
-                                this.gameObject.GetComponent<PlayerInputScript>().uiController.newLapAnim.GetComponent<NewLapInfo>().lapText.text = "New Lap";
-                                this.gameObject.GetComponent<PlayerInputScript>().uiController.newLapAnim.GetComponent<NewLapInfo>().lapTextRed.text = "New Lap";
+                                pUC.newLapAnim.GetComponent<NewLapInfo>().lapText.text = "New Lap";
+                                pUC.newLapAnim.GetComponent<NewLapInfo>().lapTextRed.text = "New Lap";
                             }
-                            this.gameObject.GetComponent<PlayerInputScript>().uiController.newLapAnim.GetComponent<NewLapInfo>().lapTextTime.text = string.Format("{0:00}", currentLapMins) + ":" + string.Format("{0:00.00}", currnetLapSecs);
+                            pUC.newLapAnim.GetComponent<NewLapInfo>().lapTextTime.text = string.Format("{0:00}", currentLapMins) + ":" + string.Format("{0:00.00}", currnetLapSecs);
                         }
                         GameManager.gManager.rManager.LapComplete(this);
                     }

@@ -130,7 +130,7 @@ public class RaceManager : MonoBehaviour
                 racer.finishedRacing = true;
             }
 
-            if (racer.transform.gameObject.GetComponent<PlayerInputScript>() != null && racer.currentLap == (TotalLaps - 1) && GameManager.gManager.finalLap == false)
+            if (racer.transform.gameObject.GetComponent<ShipBlendAnimations>() != null && racer.currentLap == (TotalLaps - 1) && GameManager.gManager.finalLap == false)
             {
                 GameManager.gManager.finalLap = true;
 

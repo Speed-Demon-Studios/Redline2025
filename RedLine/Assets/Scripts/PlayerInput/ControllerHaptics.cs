@@ -35,9 +35,17 @@ public class ControllerHaptics : MonoBehaviour
     // ------------------------------------------------------
 
 
-    private void Awake()
+    public void Initialize()
     {
-        m_pInputScript = this.gameObject.GetComponent<PlayerInputScript>();
+        foreach(GameObject players in GameManager.gManager.players)
+        {
+            if (players.GetComponent<PlayerInputScript>().GetShipControls().gameObject == this.gameObject)
+            {
+                Debug.Log("found input script");
+                m_pInputScript = players.GetComponent<PlayerInputScript>();
+            }
+        }
+
     }
 
     public void ConfigureRumble(Gamepad controller = null, float rumbleLevel = 0.0f)

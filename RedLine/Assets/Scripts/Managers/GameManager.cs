@@ -205,8 +205,8 @@ public class GameManager : MonoBehaviour
         {
             ShipsControls sControls = racer.GetComponent<ShipsControls>();
 
-            if(racer.GetComponent<PlayerInputScript>() != null)
-                racer.GetComponent<PlayerInputScript>().uiController.FinishPopUp();
+            if(racer.GetComponent<ShipBlendAnimations>() != null)
+                racer.GetComponent<RacerDetails>().GetpUC().FinishPopUp();
 
             sControls.ResetAcceleration();
             AIMoveInputs temp;

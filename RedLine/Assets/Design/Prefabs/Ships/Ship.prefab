@@ -265,11 +265,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf1b926efcb91e43bdfac1ee72a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerLayers: 
-  ignoreLayers: []
+  playerLayers: 08000000090000000a0000000b000000
+  ignoreLayers:
+  - serializedVersion: 2
+    m_Bits: 8695
+  - serializedVersion: 2
+    m_Bits: 8951
+  - serializedVersion: 2
+    m_Bits: 9463
+  - serializedVersion: 2
+    m_Bits: 10487
   cam: {fileID: 2868536069371765821}
   m_virtualCam: {fileID: 8177504199516520170}
-  lerpTime: 0.1
+  lerpTime: 0.15
   minFOV: 60
   maxFOV: 90
 --- !u!114 &2868536069181459848
@@ -444,7 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f89808d46c0844786c5a748be72649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rumbleDurationAtTarget: 0
+  rumbleDurationAtTarget: 1
 --- !u!114 &6830401917638009722
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -45,6 +45,7 @@ public class PlayerInputScript : MonoBehaviour
         ship.GetComponent<ShipsControls>().enabled = true; // Enables shipControls for movement
         ship.GetComponent<ShipsControls>().shipSelected = m_shipIndex;
         ship.GetComponent<ShipsControls>().SetMaterialIndex(m_shipMaterialNumber);
+        ship.GetComponent<ControllerHaptics>().enabled = true;
 
         if (ship.GetComponent<VariantAudioContainer>() != null)
         {
@@ -68,6 +69,9 @@ public class PlayerInputScript : MonoBehaviour
         {
             FindEveryChild(child, redline);
         }
+
+        ship.GetComponent<CameraStuff>().SwitchCameraLayers(m_playerNumber);
+        ship.GetComponent<ControllerHaptics>().Initialize();
 
         GameManager.gManager.playerShips.Add(ship);
         GameManager.gManager.allRacers.Add(ship);
